@@ -1,0 +1,42 @@
+.loading-main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-heading {
+  color: hsl(0, 0%, 28%);
+  font-size: 20px !important;
+  font-weight: bold !important;
+  /* font-family: monospace; */
+  letter-spacing: 7px !important;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.loading-heading {
+  /* padding: 64px; */
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 30%) 0,
+    hsl(0, 0%, 100%) 10%,
+    hsl(0, 0%, 30%) 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  /* 100% {
+        background-position: 600px;
+      } */
+}
