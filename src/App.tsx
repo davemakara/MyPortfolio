@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
-import LoadingProject from "./pages/LoadingProject";
+import LoadingProject from "./sections/LoadingProject";
+import HomeContent from "./sections/HomeContent";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [isMounted, setIsMounted] = useState(false);
@@ -15,16 +19,15 @@ function App() {
       {!isMounted ? (
         <LoadingProject />
       ) : (
-        <div>Hello</div>
-        // <>
-        //   <Header />
-        //   <Routes>
-        //     <Route path="/" element={<HomeContent />} />
-        //     <Route path="/projects" element={<ProjectsPage />} />
-        //     <Route path="/projects/:id" element={<ProjectDetail />} />
-        //   </Routes>
-        //   <Footer />
-        // </>
+        <>
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomeContent />} />
+            {/* <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/:id" element={<ProjectDetail />} /> */}
+          </Routes>
+          <Footer />
+        </>
       )}
     </>
   );

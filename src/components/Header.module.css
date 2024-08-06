@@ -1,0 +1,92 @@
+header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  /* background-color: #000;
+    box-shadow: 0 4px 2px -2px black; */
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+}
+
+.profileInfo p {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* font-weight: 700; */
+  color: #f5f5f5;
+}
+
+.profileInfo p:hover {
+  cursor: default;
+}
+
+.profileInfo .imgWrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+
+.profileInfo .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+
+.menu-icon {
+  display: block;
+  width: 27px;
+  height: 27px;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.main-navigation {
+  display: none;
+}
+
+@media only screen and (min-width: 620px) {
+  header {
+    padding: 0 2rem;
+    height: 90px;
+  }
+
+  .profileInfo p {
+    font-size: 0.8rem;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .main-navigation {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  header {
+    padding: 0 3rem;
+  }
+
+  .profileInfo .imgWrapper {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .profileInfo p {
+    font-size: 0.9rem;
+  }
+}
