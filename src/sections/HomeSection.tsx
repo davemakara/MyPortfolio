@@ -3,9 +3,11 @@ import styles from "./HomeSection.module.css";
 
 import SocialBox from "../components/SocialBox";
 
+import ManImg from "../assets/man.png";
+
 const HomeSection = () => {
   return (
-    <section className={styles["main-homepage"]}>
+    <section className="w-full min-h-screen flex items-center">
       <SocialBox />
 
       <div className={styles["main-div"]}>
@@ -20,6 +22,7 @@ const HomeSection = () => {
             Applications that leads to the success of the overall product
           </p>
         </div>
+        <img src={ManImg} alt="mand img" className="w-[400px] h-[500px]" />
       </div>
     </section>
   );

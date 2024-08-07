@@ -13,7 +13,7 @@ const SocialBox = () => {
             target="_blank"
             className="w-full block p-[10px] rounded-sm transition-colors duration-500 ease-out hover:bg-gray-light"
           >
-            <FaLinkedin className="text-xl" />
+            <FaLinkedin className="text-3xl" />
           </a>
         </li>
         <li>
@@ -22,7 +22,7 @@ const SocialBox = () => {
             target="_blank"
             className="w-full block p-[10px] rounded-sm transition-all duration-500 ease-out hover:bg-gray-light"
           >
-            <FaGithub className="text-xl" />
+            <FaGithub className="text-3xl" />
           </a>
         </li>
         <li>
@@ -31,7 +31,7 @@ const SocialBox = () => {
             target="_blank"
             className="w-full block p-[10px] rounded-sm transition-all duration-500 ease-out hover:bg-gray-light"
           >
-            <FaInstagramSquare className="text-xl" />
+            <FaInstagramSquare className="text-3xl" />
           </a>
         </li>
         <li>
@@ -40,7 +40,7 @@ const SocialBox = () => {
             target="_blank"
             className="w-full block p-[10px] rounded-sm transition-all duration-500 ease-out hover:bg-gray-light"
           >
-            <FaFacebookSquare className="text-xl" />
+            <FaFacebookSquare className="text-3xl" />
           </a>
         </li>
       </ul>

@@ -1,14 +1,14 @@
-import jobListingImg from "../assets/joblisting.png";
-import githubSearchImg from "../assets/githubUserSearch.png";
-import foodOrderImg from "../assets/foodApp.png";
-import tbcXusaidImg from "../assets/TBCxUSAID.png";
-import investmentImg from "../assets/investmentApp.png";
-import sentobarImg from "../assets/SENTOBAR.png";
-import diceGameImg from "../assets/dice-game.png";
-import signupImg from "../assets/sign-up-form.png";
-import projectAppImg from "../assets/projectApp.png";
-import skoteImg from "../assets/skote.png";
-import flowRecordsImg from "../assets/flowrecords.png";
+import jobListingImg from "../assets/projects/joblisting.png";
+import githubSearchImg from "../assets/projects/githubUserSearch.png";
+import foodOrderImg from "../assets/projects/foodApp.png";
+import tbcXusaidImg from "../assets/projects/TBCxUSAID.png";
+import investmentImg from "../assets/projects/investmentApp.png";
+import sentobarImg from "../assets/projects/SENTOBAR.png";
+import diceGameImg from "../assets/projects/dice-game.png";
+import signupImg from "../assets/projects/sign-up-form.png";
+import projectAppImg from "../assets/projects/projectApp.png";
+import skoteImg from "../assets/projects/skote.png";
+import flowRecordsImg from "../assets/projects/flowrecords.png";
 
 export interface Project {
   id: string;

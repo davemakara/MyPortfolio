@@ -1,7 +1,13 @@
+import AboutSection from "./AboutSection";
 import HomeSection from "./HomeSection";
 
 const HomeContent = () => {
-  return <HomeSection />;
+  return (
+    <>
+      <HomeSection />
+      <AboutSection />
+    </>
+  );
 };
 
 export default HomeContent;
