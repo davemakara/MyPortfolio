@@ -1,16 +1,27 @@
 import styles from "./AboutSection.module.css";
 
-// import { MY_SKILLS } from "../store/store";
+import { MY_SKILLS } from "../store/store";
 
 const AboutSection = () => {
   return (
-    <section className={styles["aboutPage-wrapper"]}>
-      <div className={styles["about-me"]}>
-        <h1>ABOUT ME</h1>
-        <p>
-          Here you will find more information about me, what I do and my current
-          skills mostly in terms of programming and technology
-        </p>
+    <section className="w-full min-h-screen px-5 md:pb-5">
+      <div className="w-full py-16">
+        <h1 className="text-white text-5xl text-center pb-16">My Skills</h1>
+        <div className="w-4/5 mx-auto flex flex-wrap justify-center gap-10">
+          {MY_SKILLS.map((skill) => (
+            <div
+              key={skill.language}
+              className="flex flex-col items-center gap-4"
+            >
+              <img
+                src={skill.image}
+                alt={skill.language}
+                className="w-[92px] h-[82px] transition-all duration-300 ease-in-out hover:animate-spin hover:animate-once"
+              />
+              <p className="text-white">{skill.language}</p>
+            </div>
+          ))}
+        </div>
       </div>
       <div className={styles["below-wrapper"]}>
         <div className={styles["bio-info"]}>
@@ -34,6 +45,7 @@ const AboutSection = () => {
             experience then don't hesitate to contact me.
           </p>
         </div>
+
         {/* <div className={styles["my-skills"]}>
           <h4>My Skills</h4>
           <div className={styles["skills-wrapper"]}>

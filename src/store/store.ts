@@ -10,6 +10,21 @@ import projectAppImg from "../assets/projects/projectApp.png";
 import skoteImg from "../assets/projects/skote.png";
 import flowRecordsImg from "../assets/projects/flowrecords.png";
 
+import HTML_IMG from "../assets/skills/html.png";
+import CSS_IMG from "../assets/skills/css.png";
+import JS_IMG from "../assets/skills/javascript.png";
+import TS_IMG from "../assets/skills/typescript.png";
+import REACT_IMG from "../assets/skills/react.png";
+import NEXT_IMG from "../assets/skills/next.png";
+import POSTGRES_IMG from "../assets/skills/postgresSQL.png";
+import TAILWIND_IMG from "../assets/skills/tailwind.png";
+import SASS_IMG from "../assets/skills/sass.png";
+import BOOTSTRAP_IMG from "../assets/skills/bootstrap.png";
+import AUTH0_IMG from "../assets/skills/auth0.png";
+import VITE_IMG from "../assets/skills/vite.png";
+import GITHUB_IMG from "../assets/skills/github.png";
+import VERCEL_IMG from "../assets/skills/vercel.png";
+
 export interface Project {
   id: string;
   name: string;
@@ -20,27 +35,68 @@ export interface Project {
   link: string;
 }
 
-export const MY_SKILLS: string[] = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "PostgreSQL",
-  "Redux",
-  "React Router",
-  "Styled Components",
-  "RESTful APIs",
-  "SCSS",
-  "Tailwind CSS",
-  "Bootstrap",
-  "Responsive Design",
-  "Auth0",
-  "GIT",
-  "Github",
-  "NPM",
-  "Figma",
+export interface Skill {
+  image: string;
+  language: string;
+}
+
+export const MY_SKILLS: Skill[] = [
+  {
+    image: HTML_IMG,
+    language: "HTML5",
+  },
+  {
+    image: CSS_IMG,
+    language: "CSS3",
+  },
+  {
+    image: JS_IMG,
+    language: "JavaScript",
+  },
+  {
+    image: TS_IMG,
+    language: "TypeScript",
+  },
+  {
+    image: REACT_IMG,
+    language: "React.js",
+  },
+  {
+    image: NEXT_IMG,
+    language: "Next.js",
+  },
+  {
+    image: POSTGRES_IMG,
+    language: "PostgreSQL",
+  },
+  {
+    image: TAILWIND_IMG,
+    language: "Tailwind CSS",
+  },
+  {
+    image: SASS_IMG,
+    language: "SASS",
+  },
+  {
+    image: BOOTSTRAP_IMG,
+    language: "Bootstrap",
+  },
+  {
+    image: AUTH0_IMG,
+    language: "Auth0",
+  },
+  {
+    image: VITE_IMG,
+    language: "Vite",
+  },
+  {
+    image: GITHUB_IMG,
+    language: "GitHub",
+  },
+  {
+    image: VERCEL_IMG,
+    language: "Vercel",
+  },
 ];
 
 export const PROJECTS: Project[] = [
