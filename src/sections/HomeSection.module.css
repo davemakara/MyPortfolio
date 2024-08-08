@@ -13,8 +13,7 @@
 .main-div {
   width: 90%;
   /* max-width: 50rem; */
-  display: flex;
-  justify-content: space-around;
+  display: block;
 }
 
 /* .main-div h1 {
@@ -82,6 +81,10 @@
 }
 
 @media only screen and (min-width: 1050px) {
+  .main-div {
+    display: flex;
+    justify-content: space-around;
+  }
   .main-div h1 {
     font-size: 2.8rem;
   }

@@ -3,7 +3,7 @@ import styles from "./HomeSection.module.css";
 
 import SocialBox from "../components/SocialBox";
 
-import ManImg from "../assets/man.png";
+import Carousel from "../components/carousel/Carousel";
 
 const HomeSection = () => {
   return (
@@ -17,12 +17,12 @@ const HomeSection = () => {
         <div>
           <h1>HELLO, DAVID IS HERE.</h1>
 
-          <p>
+          {/* <p>
             A Frontend focused Web Developer - building Websites and Web
             Applications that leads to the success of the overall product
-          </p>
+          </p> */}
         </div>
-        <img src={ManImg} alt="mand img" className="w-[400px] h-[500px]" />
+        <Carousel />
       </div>
     </section>
   );
