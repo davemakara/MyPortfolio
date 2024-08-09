@@ -1,5 +1,5 @@
-import AboutSection from "./AboutSection";
-import HomeSection from "./HomeSection";
+import AboutSection from "../sections/AboutSection";
+import HomeSection from "../sections/HomeSection";
 
 const HomeContent = () => {
   return (

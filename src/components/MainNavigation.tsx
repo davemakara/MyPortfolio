@@ -6,7 +6,6 @@ const MainNavigation = () => {
       <ul>
         <li className={styles.navLink}>HOME</li>
         <li className={styles.navLink}>ABOUT</li>
-        <li className={styles.navLink}>PROJECTS</li>
         <li className={styles.navLink}>CONTACT</li>
       </ul>
     </nav>

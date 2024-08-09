@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import LoadingProject from "./sections/LoadingProject";
-import HomeContent from "./sections/HomeContent";
+import HomeContent from "./pages/HomeContent";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
