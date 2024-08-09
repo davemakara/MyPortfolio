@@ -14,5 +14,6 @@
 
 body {
   background: #212529;
+  /* background: linear-gradient(#0f0c29, #302b63, #24243e); */
   font-family: "Rubik Moonrocks", sans-serif;
 }

@@ -1,8 +1,6 @@
 .swiper {
-  width: 700px;
-  height: 500px;
-  /* width: 500px;
-  height: 400px; */
+  width: 280px;
+  height: 220px;
 }
 
 .swiper-slide {
@@ -53,4 +51,31 @@
 
 .swiper-slide:nth-child(10n) {
   background-color: rgb(54, 94, 77);
+}
+
+@media only screen and (min-width: 500px) {
+  .swiper {
+    width: 340px;
+    height: 280px;
+    /* width: 500px;
+    height: 400px; */
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .swiper {
+    width: 450px;
+    height: 300px;
+    /* width: 500px;
+    height: 400px; */
+  }
+}
+
+@media only screen and (min-width: 1540px) {
+  .swiper {
+    width: 700px;
+    height: 500px;
+    /* width: 500px;
+    height: 400px; */
+  }
 }
