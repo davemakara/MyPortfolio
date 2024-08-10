@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Margarine&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Moonrocks&family=Spicy+Rice&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,7 +14,8 @@
 }
 
 body {
-  background: #212529;
-  /* background: linear-gradient(#0f0c29, #302b63, #24243e); */
-  font-family: "Rubik Moonrocks", sans-serif;
+  /* background: #212529; */
+  background: linear-gradient(#232526, #414345);
+  /* font-family: "Rubik Moonrocks", sans-serif; */
+  font-family: "Spicy Rice", serif;
 }
