@@ -1,5 +1,5 @@
 import MySkills from "../components/MySkills";
-import styles from "./AboutSection.module.css";
+// import styles from "./AboutSection.module.css";
 
 const AboutSection = () => {
   return (

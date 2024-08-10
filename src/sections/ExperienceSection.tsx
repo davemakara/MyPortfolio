@@ -16,21 +16,21 @@ const ExperienceSection = () => {
             />
           </div>
           <div className="text-white text-xl flex flex-col text-center md:text-left md:justify-center gap-4 w-full md:w-2/5 mb-8 md:mb-0">
-            <p>React.js Developer</p>
+            <p className="font-semibold">React.js Developer</p>
             <p>Enagram.ai</p>
             <p>Jun 2023 - Present</p>
           </div>
           <div className="flex flex-col justify-between md:justify-around items-center md:items-start py-2 w-full md:w-2/5">
-            <p className="text-white text-center md:text-left">
+            <p className="text-white text-center md:text-left mb-5 md:mb-0">
               dssd sd sdsdsd sdsdsdsdsdsds sd sddsdsdsd sdsdsdsdsd sdsdsdsdsd
               sdsdsdsdsdsd sdsdsdsdsdsd
             </p>
 
-            <ul className="flex gap-4 text-white">
-              <li className="p-1 bg-green rounded-md">React.js</li>
-              <li className="p-1 bg-green rounded-md">Typescript</li>
-              <li className="p-1 bg-green rounded-md">Tailwind</li>
-              <li className="p-1 bg-green rounded-md">Github</li>
+            <ul className="flex gap-2 sm:gap-3 md:gap-4 text-white">
+              <li className="p-1 bg-green rounded-md text-sm">React.js</li>
+              <li className="p-1 bg-green rounded-md text-sm">Typescript</li>
+              <li className="p-1 bg-green rounded-md text-sm">Tailwind</li>
+              <li className="p-1 bg-green rounded-md text-sm">Github</li>
             </ul>
           </div>
         </div>
