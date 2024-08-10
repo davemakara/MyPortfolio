@@ -4,6 +4,7 @@ import HomeContent from "./pages/HomeContent";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
+import ProjectPage from "./pages/ProjectPage";
 
 function App() {
   const [isMounted, setIsMounted] = useState(false);
@@ -23,8 +24,8 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<HomeContent />} />
-            {/* <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/projects/:id" element={<ProjectDetail />} /> */}
+            {/* <Route path="/projects" element={<ProjectsPage />} /> */}
+            <Route path="/:projectId" element={<ProjectPage />} />
           </Routes>
           <Footer />
         </>

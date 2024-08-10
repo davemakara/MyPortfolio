@@ -1,10 +1,10 @@
-import profilePic from "../assets/profile2.jpg";
+import profilePic from "../assets/pic.jpg";
 import styles from "./Header.module.css";
 import MainNavigation from "./MainNavigation";
 
 const Header = () => {
   return (
-    <header>
+    <header className="shadow-lg shadow-white">
       <span className={styles.profileInfo}>
         <div className={styles.imgWrapper}>
           <img src={profilePic} alt="profile picture" />
