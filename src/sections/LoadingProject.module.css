@@ -11,7 +11,7 @@
   font-size: 20px;
   font-weight: bold !important;
   /* font-family: monospace; */
-  letter-spacing: 7px !important;
+  letter-spacing: 7px;
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -43,10 +43,7 @@
 
 @media only screen and (min-width: 1250px) {
   .loading-heading {
-    color: hsl(0, 0%, 28%);
-    font-size: 60px;
-
-    /* font-family: monospace; */
-    letter-spacing: 7px !important;
+    font-size: 70px;
+    letter-spacing: 8px;
   }
 }

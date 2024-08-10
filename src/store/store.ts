@@ -264,3 +264,16 @@ export const PROJECTS: Project[] = [
     link: "https://tbc-acceleration-project.vercel.app/",
   },
 ];
+
+export const WORK_EXPERIENCE = [
+  {
+    image: "",
+    jobTitle: "scsc",
+    companyName: "scsc",
+    employmentType: "",
+    startDate: "scsc",
+    endDate: "scsc",
+    description: "",
+    skills: [],
+  },
+];

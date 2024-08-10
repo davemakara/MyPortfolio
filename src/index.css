@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Margarine&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Moonrocks&family=Spicy+Rice&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Foldit:wght@100..900&family=Margarine&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Moonrocks&family=Sofia&family=Spicy+Rice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Foldit:wght@100..900&family=Margarine&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Moonrocks&family=Rye&family=Sofia&family=Spicy+Rice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Chewy&family=Foldit:wght@100..900&family=Honk&family=Love+Ya+Like+A+Sister&family=Margarine&family=Pacifico&family=Protest+Guerrilla&family=Rubik+Bubbles&family=Rubik+Glitch+Pop&family=Rubik+Moonrocks&family=Rye&family=Shojumaru&family=Sofia&family=Spicy+Rice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Chewy&family=Ewert&family=Fascinate+Inline&family=Foldit:wght@100..900&family=Honk&family=Love+Ya+Like+A+Sister&family=Margarine&family=Pacifico&family=Protest+Guerrilla&family=Rubik+Bubbles&family=Rubik+Glitch&family=Rubik+Glitch+Pop&family=Rubik+Moonrocks&family=Rye&family=Shojumaru&family=Sofia&family=Spicy+Rice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Chewy&family=Ewert&family=Fascinate+Inline&family=Foldit:wght@100..900&family=Honk&family=Love+Ya+Like+A+Sister&family=Margarine&family=Nosifer&family=Pacifico&family=Protest+Guerrilla&family=Rubik+Bubbles&family=Rubik+Glitch&family=Rubik+Glitch+Pop&family=Rubik+Moonrocks&family=Rye&family=Shojumaru&family=Sofia&family=Spicy+Rice&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,8 +20,33 @@
 }
 
 body {
-  /* background: #212529; */
   background: linear-gradient(#232526, #414345);
+  /* background: linear-gradient(90deg, #001f3f, #036); */
   /* font-family: "Rubik Moonrocks", sans-serif; */
   font-family: "Spicy Rice", serif;
+  /* font-family: "Chewy", system-ui; */
+  /* font-family: "Rye", serif; */
+  /* font-family: "Honk", system-ui; */
+  /* font-family: "Nosifer", sans-serif; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

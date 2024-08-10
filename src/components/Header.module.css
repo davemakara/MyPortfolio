@@ -60,7 +60,7 @@ header {
 @media only screen and (min-width: 620px) {
   header {
     padding: 0 2rem;
-    height: 90px;
+    height: 80px;
   }
 
   .profileInfo p {
@@ -88,5 +88,11 @@ header {
 
   .profileInfo p {
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 1540px) {
+  header {
+    height: 90px;
   }
 }

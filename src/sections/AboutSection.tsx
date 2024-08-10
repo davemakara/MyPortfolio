@@ -3,9 +3,9 @@ import styles from "./AboutSection.module.css";
 
 const AboutSection = () => {
   return (
-    <section className="w-full min-h-screen px-5 md:pb-5">
+    <section className="w-full p-5 md:pb-5">
       <MySkills />
-      <div className={styles["below-wrapper"]}>
+      {/* <div className={styles["below-wrapper"]}>
         <div className={styles["bio-info"]}>
           <h4>Get to know me!</h4>
           <p>
@@ -27,7 +27,7 @@ const AboutSection = () => {
             experience then don't hesitate to contact me.
           </p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
