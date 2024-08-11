@@ -4,7 +4,7 @@ import MainNavigation from "./MainNavigation";
 
 const Header = () => {
   return (
-    <header className="shadow-lg shadow-white">
+    <header>
       <span className={styles.profileInfo}>
         <div className={styles.imgWrapper}>
           <img src={profilePic} alt="profile picture" />

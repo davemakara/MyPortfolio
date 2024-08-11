@@ -20,7 +20,8 @@
 }
 
 body {
-  background: linear-gradient(#232526, #414345);
+  /* background: linear-gradient(#232526, #414345); */
+  background-color: rgb(15 23 42);
   /* background: linear-gradient(90deg, #001f3f, #036); */
   /* font-family: "Rubik Moonrocks", sans-serif; */
   font-family: "Spicy Rice", serif;

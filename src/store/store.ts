@@ -25,15 +25,9 @@ import VITE_IMG from "../assets/skills/vite.png";
 import GITHUB_IMG from "../assets/skills/github.png";
 import VERCEL_IMG from "../assets/skills/vercel.png";
 
-export interface Project {
-  id: string;
-  name: string;
-  image: string;
-  description: string;
-  skills: string[];
-  overview: string;
-  link: string;
-}
+import ENAGRAM_IMG from "../assets/jobs/enagram.png";
+import TBC_IMG from "../assets/jobs/tbc.jpg";
+import UPWORK_IMG from "../assets/jobs/upwork.png";
 
 export interface Skill {
   image: string;
@@ -98,6 +92,16 @@ export const MY_SKILLS: Skill[] = [
     language: "Vercel",
   },
 ];
+
+export interface Project {
+  id: string;
+  name: string;
+  image: string;
+  description: string;
+  skills: string[];
+  overview: string;
+  link: string;
+}
 
 export const PROJECTS: Project[] = [
   {
@@ -265,15 +269,54 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-export const WORK_EXPERIENCE = [
+export interface WorkExp {
+  id: number;
+  image: string;
+  jobTitle: string;
+  companyName: string;
+  employmentType: string;
+  startDate: string;
+  endDate: string;
+  description: string;
+  skills: string[];
+}
+
+export const WORK_EXPERIENCE: WorkExp[] = [
   {
-    image: "",
-    jobTitle: "scsc",
-    companyName: "scsc",
-    employmentType: "",
-    startDate: "scsc",
-    endDate: "scsc",
-    description: "",
-    skills: [],
+    id: 1,
+    image: TBC_IMG,
+    jobTitle: "React Developer",
+    companyName: "TBC IT Academy",
+    employmentType: "Intern",
+    startDate: "Mar 2024",
+    endDate: "Jun 2024",
+    description:
+      "4 month TBC X USAID Acceleration Program including wornikng on a full-stack project",
+    skills: ["React.js", "Next.js", "Typescript", "PostgreSQL", "Tailwind"],
+  },
+  {
+    id: 2,
+    image: ENAGRAM_IMG,
+    jobTitle: "Front-end Developer",
+    companyName: "Enagram.ai",
+    employmentType: "Contract",
+    startDate: "Jun 2023",
+    endDate: "Present",
+    description:
+      "Collaborating with a startup team to digitize Low Resource Languages and empower speakers to effectively address contemporary challenges",
+    skills: ["React.js", "Typescript", "SASS", "Redux"],
+  },
+
+  {
+    id: 3,
+    image: UPWORK_IMG,
+    jobTitle: "React.js Developer",
+    companyName: "GeGold",
+    employmentType: "Freelance Project",
+    startDate: "Jan 2022",
+    endDate: "Sep 2022",
+    description:
+      "Creating reusable components in React.js along with TypeScript, state management in Redux, getting, updating and creating data with REST API and axios",
+    skills: ["React.js", "Typescript", "Redux"],
   },
 ];

@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import ProjectPage from "./pages/ProjectPage";
+import ParticlesBackground from "./components/particles/ParticlesBackground";
 
 function App() {
   const [isMounted, setIsMounted] = useState(false);
@@ -21,6 +22,7 @@ function App() {
         <LoadingProject />
       ) : (
         <>
+          <ParticlesBackground />
           <Header />
           <Routes>
             <Route path="/" element={<HomeContent />} />

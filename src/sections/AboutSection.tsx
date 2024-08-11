@@ -3,7 +3,7 @@ import MySkills from "../components/MySkills";
 
 const AboutSection = () => {
   return (
-    <section className="w-full p-5 md:pb-5">
+    <section className="w-full px-5 md:pb-5 mb-10">
       <MySkills />
       {/* <div className={styles["below-wrapper"]}>
         <div className={styles["bio-info"]}>
