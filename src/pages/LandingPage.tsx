@@ -1,4 +1,5 @@
 import AboutSection from "../sections/AboutSection";
+import ContactSection from "../sections/ContactSection";
 import ExperienceSection from "../sections/ExperienceSection";
 import HomeSection from "../sections/HomeSection";
 
@@ -8,6 +9,7 @@ const LandingPage = () => {
       <HomeSection />
       <AboutSection />
       <ExperienceSection />
+      <ContactSection />
     </>
   );
 };

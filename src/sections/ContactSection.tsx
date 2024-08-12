@@ -1,34 +1,51 @@
-import styles from "./ContactSection.module.css";
+import { FiMail } from "react-icons/fi";
+import { GrLocation } from "react-icons/gr";
+import { FiPhoneCall } from "react-icons/fi";
 
 const ContactSection = () => {
   return (
-    <section className={styles["contactPage-wrapper"]}>
-      <div className={styles["contact-upper"]}>
-        <h1>CONTACT ME</h1>
-        <p>
-          In case of any interest or job offers feel free to contact me on my
-          contact details below and I will get back to you as soon as possible.
-        </p>
+    <div className="w-full p-8 md:p-16">
+      <p className="text-white text-2xl lg:text-5xl text-center pb-12 lg:pb-16">
+        Contact
+      </p>
+      <div className="grid gap-4 grid-cols-1 lg:grid-cols-3">
+        <Card
+          title="Email"
+          subtitle="davidmakarr@gmail.com"
+          href="#"
+          Icon={FiMail}
+        />
+        <Card
+          title="Phone"
+          subtitle="+995 574 031 319"
+          href="#"
+          Icon={FiPhoneCall}
+        />
+
+        <Card
+          title="Location"
+          subtitle="Tbilisi, Georgia"
+          href="#"
+          Icon={GrLocation}
+        />
       </div>
-      <div className={styles["contact-below"]}>
-        <ul>
-          <li>Email: davidmakarr@gmail.com</li>
-          <li>
-            Linkedin:{" "}
-            <a href="https://www.linkedin.com/in/davidmakarov/" target="_blank">
-              David Makarov
-            </a>
-          </li>
-          <li>
-            Github:{" "}
-            <a href="https://github.com/davemakara" target="_blank">
-              davemakara
-            </a>
-          </li>
-          <li>Location: Tbilisi, Georgia</li>
-        </ul>
-      </div>
-    </section>
+    </div>
+  );
+};
+
+const Card = ({ title, subtitle, Icon, href }: any) => {
+  return (
+    <a
+      href={href}
+      className="w-full p-4 rounded border-[1px] border-black relative overflow-hidden group bg-[#EEEEEE]"
+    >
+      <div className="absolute inset-0 bg-gradient-to-r from-orange to-yellow translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
+
+      <Icon className="absolute z-10 -top-12 -right-12 text-9xl group-hover:rotate-12 transition-transform duration-300" />
+      <Icon className="mb-2 text-2xl text-violet-600 transition-colors relative z-10 duration-300" />
+      <h3 className="text-xl relative z-10 duration-300">{title}</h3>
+      <p className="text-lg relative z-10 duration-300">{subtitle}</p>
+    </a>
   );
 };
 

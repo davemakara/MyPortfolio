@@ -7,13 +7,9 @@ interface BurgerMenuProps {
   menuIsOpen: boolean;
 }
 
-const BurgerMenu = ({ handleClick, menuIsOpen }: BurgerMenuProps) => {
+const BurgerMenu = ({ handleClick }: BurgerMenuProps) => {
   return (
-    <div
-      className={`absolute md:hidden top-0 left-0 w-full h-screen z-50 bg-customBlue flex justify-center items-center transition-transform duration-300 ease-in-out ${
-        menuIsOpen ? "left-0" : "left-full"
-      }`}
-    >
+    <div className="absolute md:hidden top-0 left-0 w-full h-screen z-50 bg-customBlue flex justify-center items-center transition-all duration-1000 ease-in-out translate-x-0">
       <span
         onClick={handleClick}
         className="absolute top-6 right-6 text-white text-4xl p-1 cursor-pointer hover:text-yellow transition-colors duration-300 ease-in-out"
@@ -25,6 +21,7 @@ const BurgerMenu = ({ handleClick, menuIsOpen }: BurgerMenuProps) => {
         <li>
           <Link
             to="/"
+            onClick={handleClick}
             className="hover:text-yellow transition-colors duration-300 ease-in-out py-5"
           >
             HOME
@@ -33,6 +30,7 @@ const BurgerMenu = ({ handleClick, menuIsOpen }: BurgerMenuProps) => {
         <li>
           <Link
             to="/"
+            onClick={handleClick}
             className="hover:text-yellow transition-colors duration-300 ease-in-out py-5"
           >
             ABOUT
@@ -41,6 +39,7 @@ const BurgerMenu = ({ handleClick, menuIsOpen }: BurgerMenuProps) => {
         <li>
           <Link
             to="/"
+            onClick={handleClick}
             className="hover:text-yellow transition-colors duration-300 ease-in-out py-5"
           >
             CONTACT
