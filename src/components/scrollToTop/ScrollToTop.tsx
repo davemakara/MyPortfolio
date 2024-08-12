@@ -38,7 +38,7 @@ const ScrollToTop = () => {
           isVisible ? "opacity-100" : "opacity-0"
         } bg-gray-light hover:bg-gray inline-flex items-center rounded-md p-3 text-black shadow-sm transition-all`}
       >
-        <RiArrowUpDoubleFill className="h-8 w-10" />
+        <RiArrowUpDoubleFill className="w-8 md:w-10 h-6 md:h-8" />
       </button>
     </div>
   );

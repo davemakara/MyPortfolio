@@ -12,7 +12,6 @@ import ProjectCard from "./ProjectCard";
 
 const Carousel = () => {
   const ReversedProjects = [...PROJECTS].reverse();
-  console.log(ReversedProjects);
 
   return (
     <div>
