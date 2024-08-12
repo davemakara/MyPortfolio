@@ -1,7 +1,18 @@
+import { useState } from "react";
+
 import profilePic from "../assets/pic.jpg";
+import BurgerMenu from "./BurgerMenu";
 import MainNavigation from "./MainNavigation";
 
+import { LuMenuSquare } from "react-icons/lu";
+
 const Header = () => {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setMenuIsOpen((prev) => !prev);
+  };
+
   return (
     <header className="absolute top-0 w-full h-[70px] sm:h-[80px] xxl:h-[90px] flex justify-between items-center px-5 sm:px-10 md:px-16">
       <span className="flex items-center gap-4">
@@ -16,8 +27,16 @@ const Header = () => {
           DAVID MAKAROV
         </p>
       </span>
-
+      <span
+        onClick={handleClick}
+        className="block md:hidden text-white text-3xl p-1 cursor-pointer hover:text-yellow transition-colors duration-300 ease-in-out"
+      >
+        <LuMenuSquare />
+      </span>
       <MainNavigation />
+      {menuIsOpen && (
+        <BurgerMenu handleClick={handleClick} menuIsOpen={menuIsOpen} />
+      )}
     </header>
   );
 };

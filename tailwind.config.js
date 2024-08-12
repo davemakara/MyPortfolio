@@ -10,6 +10,7 @@ export default {
       xxl: "1540px",
     },
     colors: {
+      customBlue: "rgb(15 23 42)",
       black: "#000000",
       white: "#ffffff",
       blue: "#1fb6ff",
