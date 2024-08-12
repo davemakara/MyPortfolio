@@ -7,11 +7,11 @@ interface JobProps {
 const JobCard = ({ job }: JobProps) => {
   return (
     <div className="w-full md:h-[280px] p-5 md:pl-0 flex flex-col md:flex-row border-l-4 md:border-l-8 border-l-yellow shadow-lg shadow-black bg-black rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out font-sans mb-10">
-      <div className="mb-8 md:mb-0 md:h-full md:flex md:items-center px-12 xxl:px-24">
+      <div className="mb-8 md:mb-0 md:h-full md:flex md:items-center">
         <img
           src={job.image}
           alt={job.companyName}
-          className="w-24 xxl:w-32 h-24 xxl:h-32 rounded-full mx-auto bg-center"
+          className="w-24 xxl:w-32 h-24 xxl:h-32 rounded-full mx-auto bg-center md:mx-12 xxl:mx-24"
         />
       </div>
       <div className="text-white flex flex-col text-center md:text-left md:justify-center gap-4 md:gap-5 w-full md:w-2/5 mb-8 md:mb-0">

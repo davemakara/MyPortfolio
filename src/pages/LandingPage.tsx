@@ -2,7 +2,7 @@ import AboutSection from "../sections/AboutSection";
 import ExperienceSection from "../sections/ExperienceSection";
 import HomeSection from "../sections/HomeSection";
 
-const HomeContent = () => {
+const LandingPage = () => {
   return (
     <>
       <HomeSection />
@@ -12,4 +12,4 @@ const HomeContent = () => {
   );
 };
 
-export default HomeContent;
+export default LandingPage;

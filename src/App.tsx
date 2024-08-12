@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import LoadingProject from "./sections/LoadingProject";
-import HomeContent from "./pages/HomeContent";
+import LoadingProject from "./components/loading-project/LoadingProject";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import ProjectPage from "./pages/ProjectPage";
 import ParticlesBackground from "./components/particles/ParticlesBackground";
+import LandingPage from "./pages/LandingPage";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 function App() {
   const [isMounted, setIsMounted] = useState(false);
@@ -23,10 +24,10 @@ function App() {
       ) : (
         <>
           <ParticlesBackground />
+          <ScrollToTop />
           <Header />
           <Routes>
-            <Route path="/" element={<HomeContent />} />
-            {/* <Route path="/projects" element={<ProjectsPage />} /> */}
+            <Route path="/" element={<LandingPage />} />
             <Route path="/:projectId" element={<ProjectPage />} />
           </Routes>
           <Footer />

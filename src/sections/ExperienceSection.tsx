@@ -12,7 +12,6 @@ const ExperienceSection = () => {
         {WORK_EXPERIENCE.map((job) => (
           <JobCard key={job.id} job={job} />
         ))}
-        <div className="w-[6px] h-12 bg-white mx-auto rounded-sm"></div>
       </div>
     </section>
   );
