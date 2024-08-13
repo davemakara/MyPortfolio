@@ -11,6 +11,7 @@ export default {
     },
     colors: {
       customBlue: "rgb(15 23 42)",
+      projectSkill: "rgba(153, 153, 153, 0.2)",
       black: "#000000",
       white: "#ffffff",
       blue: "#1fb6ff",

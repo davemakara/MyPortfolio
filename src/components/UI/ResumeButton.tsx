@@ -16,7 +16,7 @@ const ResumeButton = ({ children }: ResumeButtonProps) => {
   return (
     <button
       onClick={onButtonClick}
-      className="w-32 h-12 rounded-lg bg-[#C21010] text-white text-lg tracking-wider shadow-lg shadow-black hover:bg-[#AC0D0D] hover:-translate-y-[2px]"
+      className="w-28 h-11 rounded-lg bg-[#C21010] text-white text-lg tracking-wider shadow-lg shadow-black hover:bg-[#AC0D0D] hover:-translate-y-[2px]"
     >
       {children}
     </button>
