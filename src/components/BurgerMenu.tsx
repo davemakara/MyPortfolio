@@ -5,6 +5,10 @@ interface BurgerMenuProps {
   homeRef: React.RefObject<HTMLDivElement>;
   aboutRef: React.RefObject<HTMLDivElement>;
   contactRef: React.RefObject<HTMLDivElement>;
+  handleNavigation: (
+    path: string,
+    ref: React.RefObject<HTMLDivElement>
+  ) => void;
 }
 
 const BurgerMenu = ({
@@ -12,10 +16,11 @@ const BurgerMenu = ({
   homeRef,
   aboutRef,
   contactRef,
+  handleNavigation,
 }: BurgerMenuProps) => {
-  const handleScroll = (ref: React.RefObject<HTMLDivElement>) => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-    handleClick(); // Close the menu after scrolling
+  const handleScroll = (path: string, ref: React.RefObject<HTMLDivElement>) => {
+    handleNavigation(path, ref); // Navigate to the path and scroll
+    handleClick();
   };
 
   return (
@@ -30,7 +35,7 @@ const BurgerMenu = ({
       <ul className="text-white text-3xl flex flex-col items-center gap-12">
         <li>
           <button
-            onClick={() => handleScroll(homeRef)}
+            onClick={() => handleScroll("/", homeRef)}
             className="hover:text-yellow transition-colors duration-300 ease-in-out py-5"
           >
             HOME
@@ -38,7 +43,7 @@ const BurgerMenu = ({
         </li>
         <li>
           <button
-            onClick={() => handleScroll(aboutRef)}
+            onClick={() => handleScroll("/", aboutRef)}
             className="hover:text-yellow transition-colors duration-300 ease-in-out py-5"
           >
             ABOUT
@@ -46,7 +51,7 @@ const BurgerMenu = ({
         </li>
         <li>
           <button
-            onClick={() => handleScroll(contactRef)}
+            onClick={() => handleScroll("/", contactRef)}
             className="hover:text-yellow transition-colors duration-300 ease-in-out py-5"
           >
             CONTACT

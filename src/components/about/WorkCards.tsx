@@ -1,14 +1,13 @@
 import JobCard from "../JobCard";
 
 import { WORK_EXPERIENCE } from "../../store/store";
+import SectionHeading from "../UI/SectionHeading";
 
 const WorkCards = () => {
   return (
-    <div className="w-full px-10 pt-16 lg:pt-24 flex justify-center">
+    <div className="w-full px-2 sm:px-14 pt-16 lg:pt-24 flex justify-center">
       <div className="w-full xl:w-4/5 xxl:w-3/5">
-        <p className="text-white text-2xl lg:text-5xl text-center tracking-wider pb-12 lg:pb-16">
-          Work Experience
-        </p>
+        <SectionHeading>Work Experience</SectionHeading>
         {WORK_EXPERIENCE.map((job) => (
           <JobCard key={job.id} job={job} />
         ))}

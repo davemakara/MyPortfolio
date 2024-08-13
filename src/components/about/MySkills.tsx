@@ -1,11 +1,10 @@
 import { MY_SKILLS } from "../../store/store";
+import SectionHeading from "../UI/SectionHeading";
 
 const MySkills = () => {
   return (
     <div className="w-full py-10">
-      <h1 className="text-white text-2xl lg:text-5xl text-center tracking-wider pb-12 lg:pb-16">
-        My Skills
-      </h1>
+      <SectionHeading>My Skills</SectionHeading>
       <div className="w-full lg:w-4/5 mx-auto flex flex-wrap justify-center gap-9 lg:gap-11 xxl:gap-12">
         {MY_SKILLS.map((skill) => (
           <div

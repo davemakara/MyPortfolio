@@ -5,6 +5,7 @@ import BurgerMenu from "./BurgerMenu";
 import MainNavigation from "./MainNavigation";
 
 import { LuMenuSquare } from "react-icons/lu";
+import { useNavigate } from "react-router-dom";
 
 type HeaderProps = {
   homeRef: React.RefObject<HTMLDivElement>;
@@ -14,9 +15,20 @@ type HeaderProps = {
 
 const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = () => {
     setMenuIsOpen((prev) => !prev);
+  };
+
+  const handleNavigation = (
+    path: string,
+    ref: React.RefObject<HTMLDivElement>
+  ) => {
+    navigate(path); // Navigate to the specified path
+    setTimeout(() => {
+      ref.current?.scrollIntoView({ behavior: "smooth" });
+    }, 100); // Delay to ensure navigation is complete
   };
 
   return (
@@ -39,12 +51,13 @@ const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
       >
         <LuMenuSquare />
       </span>
+      <MainNavigation
+        handleNavigation={handleNavigation}
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        contactRef={contactRef}
+      />
       <div className="hidden md:flex md:items-center">
-        <MainNavigation
-          homeRef={homeRef}
-          aboutRef={aboutRef}
-          contactRef={contactRef}
-        />
         <button className="w-20 h-10 rounded-lg bg-[#C21010] text-white text-lg ml-6 lg:ml-10 tracking-wider shadow-lg shadow-black hover:bg-[#AC0D0D] hover:-translate-y-[2px]">
           Resume
         </button>
@@ -53,6 +66,7 @@ const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
       {menuIsOpen && (
         <BurgerMenu
           handleClick={handleClick}
+          handleNavigation={handleNavigation}
           homeRef={homeRef}
           aboutRef={aboutRef}
           contactRef={contactRef}
