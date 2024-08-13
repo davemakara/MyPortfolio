@@ -4,7 +4,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 const ContactCards = () => {
   return (
-    <div className="grid gap-4 grid-cols-1 lg:w-2/5">
+    <div className="grid gap-4 grid-cols-1 lg:w-2/5 px-4 sm:px-10 md:px-20 lg:px-0">
       <Card
         title="Email"
         subtitle="davidmakarr@gmail.com"

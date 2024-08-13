@@ -6,6 +6,7 @@ import MainNavigation from "./MainNavigation";
 
 import { LuMenuSquare } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
+import ResumeButton from "./UI/ResumeButton";
 
 type HeaderProps = {
   homeRef: React.RefObject<HTMLDivElement>;
@@ -58,9 +59,7 @@ const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
         contactRef={contactRef}
       />
       <div className="hidden md:flex md:items-center">
-        <button className="w-20 h-10 rounded-lg bg-[#C21010] text-white text-lg ml-6 lg:ml-10 tracking-wider shadow-lg shadow-black hover:bg-[#AC0D0D] hover:-translate-y-[2px]">
-          Resume
-        </button>
+        <ResumeButton>My Resume</ResumeButton>
       </div>
 
       {menuIsOpen && (

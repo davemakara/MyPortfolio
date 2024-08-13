@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import { FaWindowClose } from "react-icons/fa";
+import ResumeButton from "./UI/ResumeButton";
 
 interface BurgerMenuProps {
   handleClick: () => void;
@@ -23,8 +25,18 @@ const BurgerMenu = ({
     handleClick();
   };
 
+  useEffect(() => {
+    // Add inline style to disable scrolling
+    document.body.style.overflow = "hidden";
+
+    // Cleanup: Remove inline style when component unmounts
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   return (
-    <div className="absolute md:hidden top-0 left-0 w-full h-screen z-50 bg-customBlue flex justify-center items-center transition-all duration-1000 ease-in-out translate-x-0">
+    <div className="absolute md:hidden top-0 left-0 w-full h-screen z-50 bg-customBlue flex flex-col justify-center items-center transition-all duration-1000 ease-in-out translate-x-0">
       <span
         onClick={handleClick}
         className="absolute top-6 right-6 text-white text-4xl p-1 cursor-pointer hover:text-yellow transition-colors duration-300 ease-in-out"
@@ -32,7 +44,9 @@ const BurgerMenu = ({
         <FaWindowClose />
       </span>
 
-      <ul className="text-white text-3xl flex flex-col items-center gap-12">
+      <ResumeButton>My Resume</ResumeButton>
+
+      <ul className="text-white text-3xl flex flex-col items-center gap-4 mt-16">
         <li>
           <button
             onClick={() => handleScroll("/", homeRef)}
