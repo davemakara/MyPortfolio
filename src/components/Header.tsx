@@ -35,7 +35,7 @@ const Header = () => {
       </span>
       <div className="hidden md:flex md:items-center">
         <MainNavigation />
-        <button className="w-20 h-10 rounded-lg bg-[#dc2f2f] text-white text-lg ml-6 lg:ml-10 tracking-wider shadow-lg shadow-black">
+        <button className="w-20 h-10 rounded-lg bg-[#C21010] text-white text-lg ml-6 lg:ml-10 tracking-wider shadow-lg shadow-black hover:bg-[#AC0D0D] hover:-translate-y-[2px]">
           Resume
         </button>
       </div>
