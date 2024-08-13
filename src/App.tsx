@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import LoadingProject from "./components/loading-project/LoadingProject";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -10,6 +10,10 @@ import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 function App() {
   const [isMounted, setIsMounted] = useState(false);
+
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -25,9 +29,22 @@ function App() {
         <>
           <ParticlesBackground />
           <ScrollToTop />
-          <Header />
+          <Header
+            homeRef={homeRef}
+            aboutRef={aboutRef}
+            contactRef={contactRef}
+          />
           <Routes>
-            <Route path="/" element={<LandingPage />} />
+            <Route
+              path="/"
+              element={
+                <LandingPage
+                  homeRef={homeRef}
+                  aboutRef={aboutRef}
+                  contactRef={contactRef}
+                />
+              }
+            />
             <Route path="/:projectId" element={<ProjectPage />} />
           </Routes>
           <Footer />

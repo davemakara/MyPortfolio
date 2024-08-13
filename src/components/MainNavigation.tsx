@@ -1,32 +1,43 @@
-import { Link } from "react-router-dom";
+type MainNavigationProps = {
+  homeRef: React.RefObject<HTMLDivElement>;
+  aboutRef: React.RefObject<HTMLDivElement>;
+  contactRef: React.RefObject<HTMLDivElement>;
+};
 
-const MainNavigation = () => {
+const MainNavigation = ({
+  homeRef,
+  aboutRef,
+  contactRef,
+}: MainNavigationProps) => {
+  const handleScroll = (ref: React.RefObject<HTMLDivElement>) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <nav className="h-full hidden md:flex">
       <ul className="flex items-center text-white text-base xl:text-lg tracking-wider">
         <li className="h-full flex">
-          <Link
-            to="/"
+          <button
+            onClick={() => handleScroll(homeRef)}
             className="h-full flex items-center px-8 hover:text-yellow transition-colors duration-300 ease-in-out"
           >
             HOME
-          </Link>
+          </button>
         </li>
         <li className="h-full flex">
-          <Link
-            to="/"
+          <button
+            onClick={() => handleScroll(aboutRef)}
             className="h-full flex items-center px-8 hover:text-yellow transition-colors duration-300 ease-in-out"
           >
             ABOUT
-          </Link>
+          </button>
         </li>
         <li className="h-full flex">
-          <Link
-            to="/"
+          <button
+            onClick={() => handleScroll(contactRef)}
             className="h-full flex items-center px-8 hover:text-yellow transition-colors duration-300 ease-in-out"
           >
             CONTACT
-          </Link>
+          </button>
         </li>
       </ul>
     </nav>

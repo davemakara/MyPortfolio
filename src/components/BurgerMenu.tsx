@@ -1,13 +1,23 @@
 import { FaWindowClose } from "react-icons/fa";
 
-import { Link } from "react-router-dom";
-
 interface BurgerMenuProps {
   handleClick: () => void;
-  menuIsOpen: boolean;
+  homeRef: React.RefObject<HTMLDivElement>;
+  aboutRef: React.RefObject<HTMLDivElement>;
+  contactRef: React.RefObject<HTMLDivElement>;
 }
 
-const BurgerMenu = ({ handleClick }: BurgerMenuProps) => {
+const BurgerMenu = ({
+  handleClick,
+  homeRef,
+  aboutRef,
+  contactRef,
+}: BurgerMenuProps) => {
+  const handleScroll = (ref: React.RefObject<HTMLDivElement>) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+    handleClick(); // Close the menu after scrolling
+  };
+
   return (
     <div className="absolute md:hidden top-0 left-0 w-full h-screen z-50 bg-customBlue flex justify-center items-center transition-all duration-1000 ease-in-out translate-x-0">
       <span
@@ -19,31 +29,28 @@ const BurgerMenu = ({ handleClick }: BurgerMenuProps) => {
 
       <ul className="text-white text-3xl flex flex-col items-center gap-12">
         <li>
-          <Link
-            to="/"
-            onClick={handleClick}
+          <button
+            onClick={() => handleScroll(homeRef)}
             className="hover:text-yellow transition-colors duration-300 ease-in-out py-5"
           >
             HOME
-          </Link>
+          </button>
         </li>
         <li>
-          <Link
-            to="/"
-            onClick={handleClick}
+          <button
+            onClick={() => handleScroll(aboutRef)}
             className="hover:text-yellow transition-colors duration-300 ease-in-out py-5"
           >
             ABOUT
-          </Link>
+          </button>
         </li>
         <li>
-          <Link
-            to="/"
-            onClick={handleClick}
+          <button
+            onClick={() => handleScroll(contactRef)}
             className="hover:text-yellow transition-colors duration-300 ease-in-out py-5"
           >
             CONTACT
-          </Link>
+          </button>
         </li>
       </ul>
     </div>

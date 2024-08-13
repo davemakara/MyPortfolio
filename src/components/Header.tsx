@@ -6,7 +6,13 @@ import MainNavigation from "./MainNavigation";
 
 import { LuMenuSquare } from "react-icons/lu";
 
-const Header = () => {
+type HeaderProps = {
+  homeRef: React.RefObject<HTMLDivElement>;
+  aboutRef: React.RefObject<HTMLDivElement>;
+  contactRef: React.RefObject<HTMLDivElement>;
+};
+
+const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -29,19 +35,28 @@ const Header = () => {
       </span>
       <span
         onClick={handleClick}
-        className="block md:hidden text-white text-3xl p-1 cursor-pointer hover:text-yellow transition-colors duration-300 ease-in-out"
+        className="block md:hidden text-white text-4xl p-1 cursor-pointer hover:text-yellow transition-colors duration-300 ease-in-out"
       >
         <LuMenuSquare />
       </span>
       <div className="hidden md:flex md:items-center">
-        <MainNavigation />
+        <MainNavigation
+          homeRef={homeRef}
+          aboutRef={aboutRef}
+          contactRef={contactRef}
+        />
         <button className="w-20 h-10 rounded-lg bg-[#C21010] text-white text-lg ml-6 lg:ml-10 tracking-wider shadow-lg shadow-black hover:bg-[#AC0D0D] hover:-translate-y-[2px]">
           Resume
         </button>
       </div>
 
       {menuIsOpen && (
-        <BurgerMenu handleClick={handleClick} menuIsOpen={menuIsOpen} />
+        <BurgerMenu
+          handleClick={handleClick}
+          homeRef={homeRef}
+          aboutRef={aboutRef}
+          contactRef={contactRef}
+        />
       )}
     </header>
   );
