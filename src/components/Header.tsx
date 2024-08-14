@@ -34,7 +34,7 @@ const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
 
   return (
     <header className="absolute top-0 w-full h-[70px] sm:h-[80px] xxl:h-[90px] flex justify-between items-center px-5 sm:px-10 md:px-16">
-      <span className="flex items-center gap-4">
+      <span className="lg:w-[300px] flex items-center gap-4">
         <div className="w-[40px] md:w-[50px] h-[40px] md:h-[50px] overflow-hidden rounded-full border-2 border-white">
           <img
             src={profilePic}
@@ -48,7 +48,7 @@ const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
       </span>
       <span
         onClick={handleClick}
-        className="block md:hidden text-white text-4xl p-1 cursor-pointer hover:text-yellow transition-colors duration-300 ease-in-out"
+        className="block lg:hidden text-white text-4xl p-1 cursor-pointer"
       >
         <LuMenuSquare />
       </span>
@@ -58,7 +58,7 @@ const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
         aboutRef={aboutRef}
         contactRef={contactRef}
       />
-      <div className="hidden md:flex md:items-center">
+      <div className="hidden lg:flex lg:items-center lg:justify-end lg:w-[250px] xxl:w-[250px]">
         <ResumeButton>My Resume</ResumeButton>
       </div>
 

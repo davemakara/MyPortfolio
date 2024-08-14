@@ -18,7 +18,7 @@ const MainNavigation = ({
   //   ref.current?.scrollIntoView({ behavior: "smooth" });
   // };
   return (
-    <nav className="h-full hidden md:flex">
+    <nav className="h-full hidden lg:flex">
       <ul className="flex items-center text-white text-base xl:text-lg tracking-wider">
         <li className="h-full flex">
           <button
