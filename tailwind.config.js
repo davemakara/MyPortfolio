@@ -24,7 +24,17 @@ export default {
       gray: "#8492a6",
       "gray-light": "#d3dce6",
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        "rotate-back-forth": {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "50%": { transform: "rotate(15deg)" },
+        },
+      },
+      animation: {
+        "rotate-back-forth": "rotate-back-forth 1s infinite ease-in-out",
+      },
+    },
   },
   plugins: [],
 };
