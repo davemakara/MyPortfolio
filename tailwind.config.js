@@ -26,13 +26,18 @@ export default {
     },
     extend: {
       keyframes: {
-        "rotate-back-forth": {
+        "rotate-left": {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "50%": { transform: "rotate(-15deg)" },
+        },
+        "rotate-right": {
           "0%, 100%": { transform: "rotate(0deg)" },
           "50%": { transform: "rotate(15deg)" },
         },
       },
       animation: {
-        "rotate-back-forth": "rotate-back-forth 2s infinite ease-in-out",
+        "rotate-left": "rotate-left 2s infinite ease-in-out",
+        "rotate-right": "rotate-right 2s infinite ease-in-out",
       },
     },
   },
