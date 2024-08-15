@@ -6,7 +6,11 @@ const ProjectPage = () => {
   const project = PROJECTS.find((el) => el.id === projectId);
 
   if (!project) {
-    return <p>Project not found</p>;
+    return (
+      <div className="w-full h-screen flex justify-center items-center text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide">
+        <p>Project not found..</p>
+      </div>
+    );
   }
 
   return (
@@ -28,7 +32,8 @@ const ProjectPage = () => {
           </a>
 
           <a
-            href={project.link}
+            href={project.githubLink}
+            target="_blank"
             className="w-20 sm:w-24 h-10 sm:h-12 bg-projectSkill flex items-center justify-center rounded-md hover:bg-orange transition-colors duration-300 ease-in-out shadow-lg shadow-black"
           >
             REPO
@@ -44,7 +49,8 @@ const ProjectPage = () => {
         </h4>
         <p className="text-white text-base xl:text-lg">{project.overview}</p>
         <p className="text-white text-base xl:text-lg mt-5 mb-10">
-          Feel free to check out the Project by visiting the Live Link.
+          Feel free to check out the Project by visiting the Live Link or Github
+          Repo.
         </p>
         <h4 className="text-white text-2xl md:text-3xl mb-8">Tools Used</h4>
         <ul className="flex flex-wrap gap-3">

@@ -14,9 +14,6 @@ const MainNavigation = ({
   contactRef,
   handleNavigation,
 }: MainNavigationProps) => {
-  // const handleScroll = (ref: React.RefObject<HTMLDivElement>) => {
-  //   ref.current?.scrollIntoView({ behavior: "smooth" });
-  // };
   return (
     <nav className="h-full hidden lg:flex">
       <ul className="flex items-center text-white text-base xl:text-lg tracking-wider">

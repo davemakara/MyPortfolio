@@ -5,7 +5,7 @@ import SectionHeading from "../UI/SectionHeading";
 
 const WorkCards = () => {
   return (
-    <div className="w-full px-2 sm:px-14 pt-16 lg:pt-24 flex justify-center">
+    <div className="w-full px-2 sm:px-14 md:px-10 pt-16 lg:pt-24 flex justify-center">
       <div className="w-full xl:w-4/5 xxl:w-3/5">
         <SectionHeading>Work Experience</SectionHeading>
         {WORK_EXPERIENCE.map((job) => (

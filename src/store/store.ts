@@ -101,6 +101,7 @@ export interface Project {
   skills: string[];
   overview: string;
   link: string;
+  githubLink: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -114,6 +115,7 @@ export const PROJECTS: Project[] = [
     overview:
       "Sign Up Form is a project with several steps of registering and a full validation logic. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/Sign-up-Form/",
+    githubLink: "https://github.com/davemakara/Sign-up-Form",
   },
   {
     id: "p2",
@@ -123,8 +125,9 @@ export const PROJECTS: Project[] = [
       "SENTOBAR is a markup project for Barber Shop including all the services and booking form with nice styling.",
     skills: ["HTML", "CSS", "Bootstrap", "Github"],
     overview:
-      "SENTOBAR is a markup project for Barber Shop including all the services and booking form with nice styling. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
+      "SENTOBAR is a markup project for Barber Shop including carousel, barber cards, services and booking form with nice styling. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/SENTOBAR/",
+    githubLink: "https://github.com/davemakara/SENTOBAR",
   },
   {
     id: "p3",
@@ -136,6 +139,7 @@ export const PROJECTS: Project[] = [
     overview:
       "Dice Game is an app for 2 players with logic - each player rolls the dice and collects points to win. First player who reaches 100 points is a winner. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/Dice-Game/",
+    githubLink: "https://github.com/davemakara/Dice-Game",
   },
 
   {
@@ -146,8 +150,9 @@ export const PROJECTS: Project[] = [
       "SKOTE Dashboard is a markup project displaying the personal dashboard of the agent with some stats, activities and tables.",
     skills: ["HTML", "CSS", "SCSS", "Github"],
     overview:
-      "SKOTE Dashboard is a markup project displaying the personal dashboard of the agent with some stats, activities and tables. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
+      "SKOTE Dashboard is a markup project displaying the personal dashboard of the agent with some personal information such as name and profession, monthly stats, activities and tables. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/SKOTE---Project-2/",
+    githubLink: "https://github.com/davemakara/SKOTE---Project-2",
   },
   {
     id: "p5",
@@ -167,6 +172,7 @@ export const PROJECTS: Project[] = [
     overview:
       "Investment Calculator is an app with logic to calculate the total savings and interest based on user interaction. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/investment-calculator/",
+    githubLink: "https://github.com/davemakara/investment-calculator",
   },
   {
     id: "p6",
@@ -184,8 +190,9 @@ export const PROJECTS: Project[] = [
       "Github",
     ],
     overview:
-      "Project App is an app for creating new projects, have an access on them to the sidebar and option to add tasks in each of them. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
+      "Project App is an app for creating new projects by adding title, description and date. Also, it gives an access on them to the sidebar and option to add tasks in each of them. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/Project-App/",
+    githubLink: "https://github.com/davemakara/Project-App",
   },
   {
     id: "p7",
@@ -204,8 +211,9 @@ export const PROJECTS: Project[] = [
       "Github",
     ],
     overview:
-      "Food Order App is an app similar to the food delivery apps where you have several products selection with option to add it on a cart and manage. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
+      "Food Order App is an app similar to the food delivery apps where you have several products selection with option to add it to cart and manage - add, delete or change quantity of product. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/order-food-app/",
+    githubLink: "https://github.com/davemakara/order-food-app",
   },
   {
     id: "p8",
@@ -215,8 +223,9 @@ export const PROJECTS: Project[] = [
       "Github User Search is an App for searching developers on gitHub using API and displaying it on the screen.",
     skills: ["HTML", "CSS", "Javascript", "SCSS", "Github"],
     overview:
-      "Github User Search is an App for searching developers on gitHub. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices. Also, I'm using API and based on username search it displays developer info on the screen.",
+      "Github User Search is an App for searching developers on gitHub using free API. User can search web developers based on their username and get some information like registration time, repos or social media.",
     link: "https://davemakara.github.io/Github-User-Search/",
+    githubLink: "https://github.com/davemakara/Github-User-Search",
   },
   {
     id: "p9",
@@ -226,8 +235,9 @@ export const PROJECTS: Project[] = [
       "An identical page of tbc IT academy website - including carousel, cards and QA section.",
     skills: ["HTML", "CSS", "Javascript", "Github"],
     overview:
-      "This is one identical page of tbc IT academy website - including carousel, cards and QA section. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
+      "This is one identical page of tbc IT academy website - including carousel displaying the partner companies, cards for available courses and QA section. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://davemakara.github.io/TBCxUSAID/",
+    githubLink: "https://github.com/davemakara/TBCxUSAID",
   },
   {
     id: "p10",
@@ -244,8 +254,9 @@ export const PROJECTS: Project[] = [
       "Github",
     ],
     overview:
-      "Job Listings is an App with an option to filter and search jobs based on tech skills and experience. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices. Also, I'm using API and based on username search it displays developer info on the screen.",
+      "Job Listings is an App with an option to filter and search jobs based on tech skills and experience. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
     link: "https://job-listings-hub.vercel.app/",
+    githubLink: "https://github.com/davemakara/job-listings",
   },
   {
     id: "p11",
@@ -266,6 +277,7 @@ export const PROJECTS: Project[] = [
     overview:
       "FlowRecords is a cutting-edge music app designed to keep you in tune with the latest music news and trends. Stay updated with Spotify charts and insightful articles about the music industry. Discover your favorite products, from albums to accessories and instruments, and easily add them to your cart or purchase them directly.",
     link: "https://tbc-acceleration-project.vercel.app/",
+    githubLink: "https://github.com/davemakara/tbc-react-project",
   },
 ];
 
@@ -291,7 +303,7 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     startDate: "Mar 2024",
     endDate: "Jun 2024",
     description:
-      "4 month TBC X USAID Acceleration Program including wornikng on a full-stack project",
+      "Developed a full-stack web application on behalf of 4 month TBC X USAID Acceleration Program. The project involved creating a robust PostgreSQL database and designing an interactive front-end interface.",
     skills: ["React.js", "Next.js", "Typescript", "PostgreSQL", "Tailwind"],
   },
   {

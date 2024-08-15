@@ -32,7 +32,7 @@ export default {
         },
       },
       animation: {
-        "rotate-back-forth": "rotate-back-forth 1s infinite ease-in-out",
+        "rotate-back-forth": "rotate-back-forth 2s infinite ease-in-out",
       },
     },
   },
