@@ -1,5 +1,6 @@
 import { MY_SKILLS } from "../../store/store";
 import SectionHeading from "../UI/SectionHeading";
+import Skill from "../UI/Skill";
 
 const MySkills = () => {
   return (
@@ -7,17 +8,11 @@ const MySkills = () => {
       <SectionHeading>My Skills</SectionHeading>
       <div className="w-full lg:w-4/5 mx-auto flex flex-wrap justify-center gap-9 lg:gap-11 xxl:gap-12">
         {MY_SKILLS.map((skill) => (
-          <div
+          <Skill
             key={skill.language}
-            className="flex flex-col items-center gap-4"
-          >
-            <img
-              src={skill.image}
-              alt={skill.language}
-              className="w-[50px] md:w-[70px] lg:w-[90px] h-[50px] md:h-[70px] lg:h-[90px] transition-all duration-300 ease-in-out hover:animate-spin hover:animate-once"
-            />
-            <p className="text-white text-xs lg:text-base">{skill.language}</p>
-          </div>
+            image={skill.image}
+            language={skill.language}
+          />
         ))}
       </div>
     </div>

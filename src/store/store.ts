@@ -19,6 +19,7 @@ import NEXT_IMG from "../assets/skills/next.png";
 import POSTGRES_IMG from "../assets/skills/postgresSQL.png";
 import TAILWIND_IMG from "../assets/skills/tailwind.png";
 import SASS_IMG from "../assets/skills/sass.png";
+import REDUX_IMG from "../assets/skills/redux.png";
 import BOOTSTRAP_IMG from "../assets/skills/bootstrap.png";
 import AUTH0_IMG from "../assets/skills/auth0.png";
 import VITE_IMG from "../assets/skills/vite.png";
@@ -70,6 +71,10 @@ export const MY_SKILLS: Skill[] = [
   {
     image: SASS_IMG,
     language: "SASS",
+  },
+  {
+    image: REDUX_IMG,
+    language: "Redux",
   },
   {
     image: BOOTSTRAP_IMG,
