@@ -8,6 +8,10 @@ import ParticlesBackground from "./components/particles/ParticlesBackground";
 import LandingPage from "./pages/LandingPage";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-GZQKF0XJCN");
+
 function App() {
   const [isMounted, setIsMounted] = useState(false);
 
