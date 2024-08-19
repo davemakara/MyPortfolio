@@ -3,6 +3,8 @@ import AboutSection from "../sections/AboutSection";
 import ContactSection from "../sections/ContactSection";
 import HomeSection from "../sections/HomeSection";
 
+import ReactGA from "react-ga4";
+
 type LandingPageProps = {
   homeRef: React.RefObject<HTMLDivElement>;
   aboutRef: React.RefObject<HTMLDivElement>;
@@ -10,6 +12,12 @@ type LandingPageProps = {
 };
 
 const LandingPage = ({ homeRef, aboutRef, contactRef }: LandingPageProps) => {
+  ReactGA.send({
+    hitType: "pageview",
+    page: "/",
+    title: "home",
+  });
+
   const homeIsVisible = useIsVisible(homeRef);
   const aboutIsVisible = useIsVisible(aboutRef);
   const contactIsVisible = useIsVisible(contactRef);
