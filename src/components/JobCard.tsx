@@ -29,7 +29,7 @@ const JobCard = ({ job }: JobProps) => {
         </p>
 
         <ul className="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-3 md:gap-4 text-white">
-          {job.skills.map((skill) => (
+          {job.skills?.map((skill) => (
             <li
               className="p-1 xl:px-2 bg-gray-dark rounded-md text-sm md:text-base"
               key={skill}

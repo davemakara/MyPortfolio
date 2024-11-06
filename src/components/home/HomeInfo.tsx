@@ -6,8 +6,8 @@ const HomeInfo = () => {
       </h1>
 
       <p className="text-white text-base md:text-lg xl:text-2xl tracking-wider">
-        I'm a motivated and detail-oriented Front-end Developer who loves
-        building engaging and responsive websites.
+        I'm a motivated and detail-oriented Quality Assurance Specialist with a
+        strong foundation in front-end development.
       </p>
     </div>
   );

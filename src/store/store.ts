@@ -20,11 +20,15 @@ import POSTGRES_IMG from "../assets/skills/postgresSQL.png";
 import TAILWIND_IMG from "../assets/skills/tailwind.png";
 import SASS_IMG from "../assets/skills/sass.png";
 import REDUX_IMG from "../assets/skills/redux.png";
-import BOOTSTRAP_IMG from "../assets/skills/bootstrap.png";
-import AUTH0_IMG from "../assets/skills/auth0.png";
-import VITE_IMG from "../assets/skills/vite.png";
+// import BOOTSTRAP_IMG from "../assets/skills/bootstrap.png";
+// import AUTH0_IMG from "../assets/skills/auth0.png";
+// import VITE_IMG from "../assets/skills/vite.png";
 import GITHUB_IMG from "../assets/skills/github.png";
 import VERCEL_IMG from "../assets/skills/vercel.png";
+import JIRA_IMG from "../assets/skills/jira.png";
+import TRELLO_IMG from "../assets/skills/Trello.png";
+import POSTMAN_IMG from "../assets/skills/Postman.png";
+import SWAGGER_IMG from "../assets/skills/Swagger.png";
 
 import ENAGRAM_IMG from "../assets/jobs/enagram.png";
 import TBC_IMG from "../assets/jobs/tbc.jpg";
@@ -36,6 +40,22 @@ export interface Skill {
 }
 
 export const MY_SKILLS: Skill[] = [
+  {
+    image: JIRA_IMG,
+    language: "JIRA",
+  },
+  {
+    image: TRELLO_IMG,
+    language: "Trello",
+  },
+  {
+    image: POSTMAN_IMG,
+    language: "Postman",
+  },
+  {
+    image: SWAGGER_IMG,
+    language: "Swagger",
+  },
   {
     image: HTML_IMG,
     language: "HTML5",
@@ -76,18 +96,18 @@ export const MY_SKILLS: Skill[] = [
     image: REDUX_IMG,
     language: "Redux",
   },
-  {
-    image: BOOTSTRAP_IMG,
-    language: "Bootstrap",
-  },
-  {
-    image: AUTH0_IMG,
-    language: "Auth0",
-  },
-  {
-    image: VITE_IMG,
-    language: "Vite",
-  },
+  // {
+  //   image: BOOTSTRAP_IMG,
+  //   language: "Bootstrap",
+  // },
+  // {
+  //   image: AUTH0_IMG,
+  //   language: "Auth0",
+  // },
+  // {
+  //   image: VITE_IMG,
+  //   language: "Vite",
+  // },
   {
     image: GITHUB_IMG,
     language: "GitHub",
@@ -295,12 +315,24 @@ export interface WorkExp {
   startDate: string;
   endDate: string;
   description: string;
-  skills: string[];
+  skills?: string[];
 }
 
 export const WORK_EXPERIENCE: WorkExp[] = [
   {
     id: 1,
+    image: ENAGRAM_IMG,
+    jobTitle: "Junior QA Tester",
+    companyName: "Enagram.ai",
+    employmentType: "Contract",
+    startDate: "Jun 2023",
+    endDate: "Present",
+    description:
+      "Collaborating with the startup team. Executing test cases and logging issues, gaining foundational experience in manual testing and defect management",
+    skills: ["Trello", "Postman", "Swagger"],
+  },
+  {
+    id: 2,
     image: TBC_IMG,
     jobTitle: "React Developer",
     companyName: "TBC IT Academy",
@@ -310,18 +342,6 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     description:
       "Developed a full-stack web application on behalf of 4 month TBC X USAID Acceleration Program. The project involved creating a robust PostgreSQL database and designing an interactive front-end interface.",
     skills: ["React.js", "Next.js", "Typescript", "PostgreSQL", "Tailwind"],
-  },
-  {
-    id: 2,
-    image: ENAGRAM_IMG,
-    jobTitle: "Front-end Developer",
-    companyName: "Enagram.ai",
-    employmentType: "Contract",
-    startDate: "Jun 2023",
-    endDate: "Present",
-    description:
-      "Collaborating with a startup team to digitize Low Resource Languages and empower speakers to effectively address contemporary challenges",
-    skills: ["React.js", "Typescript", "SASS", "Redux"],
   },
 
   {

@@ -12,8 +12,8 @@ const Footer = () => {
             DAVID MAKAROV
           </h4>
           <p className="text-white text-base xl:text-lg tracking-wide">
-            A Frontend focused Web Developer - building Websites and Web
-            Applications that leads to the success of the overall product
+            Motivated and detail-oriented Quality Assurance Specialist with a
+            strong foundation in front-end development
           </p>
         </div>
         <div>
