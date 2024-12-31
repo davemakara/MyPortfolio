@@ -324,7 +324,7 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     id: 2,
     image: ANDERSEN_IMG,
     jobTitle: "Manual QA Engineer",
-    companyName: "EAndersen Lab",
+    companyName: "Andersen Lab",
     employmentType: "Internship",
     startDate: "Dec 2024",
     endDate: "Present",
