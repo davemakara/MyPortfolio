@@ -8,6 +8,7 @@ export default {
       lg: "1080px",
       xl: "1240px",
       xxl: "1540px",
+      xxxl: "2200px"
     },
     colors: {
       customBlue: "rgb(15 23 42)",

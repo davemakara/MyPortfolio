@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <img
           src={project.image}
           alt={project.name}
-          className="w-[280px] sm:w-[340px] md:w-[450px] xxl:w-[700px] h-[220px] sm:h-[280px] md:h-[300px] xxl:h-[500px] group-hover:grayscale transition-colors duration-300"
+          className="w-[280px] sm:w-[340px] md:w-[450px] xxl:w-[700px] xxxl:w-[900px] h-[220px] sm:h-[280px] md:h-[300px] xxl:h-[500px] xxxl:h-[650px] group-hover:grayscale transition-colors duration-300"
         />
         {/* <div className="absolute top-3 md:top-5 left-3 md:left-5 text-4xl md:text-6xl lg:text-5xl xxl:text-7xl text-yellow shadow-lg shadow-black rounded-full overflow-hidden">
           <MdOutlineSwipeLeft className=" animate-rotate-left" />

@@ -33,6 +33,7 @@ import SWAGGER_IMG from "../assets/skills/Swagger.png";
 import ENAGRAM_IMG from "../assets/jobs/enagram.png";
 import TBC_IMG from "../assets/jobs/tbc.jpg";
 import UPWORK_IMG from "../assets/jobs/upwork.png";
+import ANDERSEN_IMG from "../assets/jobs/andersen.webp"
 
 export interface Skill {
   image: string;
@@ -320,23 +321,35 @@ export interface WorkExp {
 
 export const WORK_EXPERIENCE: WorkExp[] = [
   {
-    id: 1,
+    id: 2,
+    image: ANDERSEN_IMG,
+    jobTitle: "Manual QA Engineer",
+    companyName: "EAndersen Lab",
+    employmentType: "Internship",
+    startDate: "Dec 2024",
+    endDate: "Present",
+    description:
+      "Testing software to ensure it meets quality standards by creating and executing test cases, identifying bugs, and collaborating with the development team to resolve issues.",
+    skills: ["Black-box Testing", "JIRA", "Trello", "Postman", "Swagger"],
+  },
+  {
+    id: 2,
     image: ENAGRAM_IMG,
     jobTitle: "Junior QA Tester",
     companyName: "Enagram.ai",
     employmentType: "Contract",
     startDate: "Jun 2023",
-    endDate: "Present",
+    endDate: "Dec 2024",
     description:
       "Collaborating with the startup team. Executing test cases and logging issues, gaining foundational experience in manual testing and defect management",
     skills: ["Trello", "Postman", "Swagger"],
   },
   {
-    id: 2,
+    id: 3,
     image: TBC_IMG,
     jobTitle: "React Developer",
     companyName: "TBC IT Academy",
-    employmentType: "Intern",
+    employmentType: "Internship",
     startDate: "Mar 2024",
     endDate: "Jun 2024",
     description:
@@ -345,7 +358,7 @@ export const WORK_EXPERIENCE: WorkExp[] = [
   },
 
   {
-    id: 3,
+    id: 4,
     image: UPWORK_IMG,
     jobTitle: "React.js Developer",
     companyName: "GeGold",
@@ -356,4 +369,5 @@ export const WORK_EXPERIENCE: WorkExp[] = [
       "Creating reusable components in React.js along with TypeScript, state management in Redux, getting, updating and creating data with REST API and axios",
     skills: ["React.js", "Typescript", "Redux"],
   },
+  
 ];
