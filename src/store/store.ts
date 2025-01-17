@@ -29,6 +29,7 @@ import JIRA_IMG from "../assets/skills/jira.png";
 import TRELLO_IMG from "../assets/skills/Trello.png";
 import POSTMAN_IMG from "../assets/skills/Postman.png";
 import SWAGGER_IMG from "../assets/skills/Swagger.png";
+import FIGMA_IMG from "../assets/skills/Figma.png";
 
 import ENAGRAM_IMG from "../assets/jobs/enagram.png";
 import TBC_IMG from "../assets/jobs/tbc.jpg";
@@ -56,6 +57,10 @@ export const MY_SKILLS: Skill[] = [
   {
     image: SWAGGER_IMG,
     language: "Swagger",
+  },
+  {
+    image: FIGMA_IMG,
+    language: "Figma",
   },
   {
     image: HTML_IMG,
@@ -321,7 +326,7 @@ export interface WorkExp {
 
 export const WORK_EXPERIENCE: WorkExp[] = [
   {
-    id: 2,
+    id: 1,
     image: ANDERSEN_IMG,
     jobTitle: "Manual QA Engineer",
     companyName: "Andersen Lab",
@@ -330,7 +335,7 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     endDate: "Present",
     description:
       "Testing software to ensure it meets quality standards by creating and executing test cases, identifying bugs, and collaborating with the development team to resolve issues.",
-    skills: ["Black-box Testing", "JIRA", "Trello", "Postman", "Swagger"],
+    skills: ["JIRA", "Trello", "TestRail", "Postman", "Swagger"],
   },
   {
     id: 2,
