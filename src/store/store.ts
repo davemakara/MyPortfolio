@@ -32,7 +32,7 @@ import SWAGGER_IMG from "../assets/skills/Swagger.png";
 import FIGMA_IMG from "../assets/skills/Figma.png";
 
 import ENAGRAM_IMG from "../assets/jobs/enagram.png";
-import TBC_IMG from "../assets/jobs/tbc.jpg";
+// import TBC_IMG from "../assets/jobs/tbc.jpg";
 import UPWORK_IMG from "../assets/jobs/upwork.png";
 import ANDERSEN_IMG from "../assets/jobs/andersen.webp"
 
@@ -317,7 +317,7 @@ export interface WorkExp {
   image: string;
   jobTitle: string;
   companyName: string;
-  employmentType: string;
+  employmentType?: string;
   startDate: string;
   endDate: string;
   description: string;
@@ -330,48 +330,48 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     image: ANDERSEN_IMG,
     jobTitle: "Manual QA Engineer",
     companyName: "Andersen Lab",
-    employmentType: "Internship",
-    startDate: "Dec 2024",
+    // employmentType: "Internship",
+    startDate: "Sep 2022",
     endDate: "Present",
     description:
-      "Testing software to ensure it meets quality standards by creating and executing test cases, identifying bugs, and collaborating with the development team to resolve issues.",
-    skills: ["JIRA", "Trello", "TestRail", "Postman", "Swagger"],
+      "Interaction with the developers to communicate the defects and actively participate in replicating the bugs. Development and maintenance of up-to-date test documentation: test cases, check lists, test plan, test strategy.",
+    skills: ["JIRA", "TestRail", "Postman", "Swagger"],
   },
   {
     id: 2,
     image: ENAGRAM_IMG,
-    jobTitle: "Junior QA Tester",
+    jobTitle: "Manual Software Tester",
     companyName: "Enagram.ai",
-    employmentType: "Contract",
-    startDate: "Jun 2023",
-    endDate: "Dec 2024",
+    // employmentType: "Contract",
+    startDate: "Mar 2022",
+    endDate: "Sep 2022",
     description:
-      "Collaborating with the startup team. Executing test cases and logging issues, gaining foundational experience in manual testing and defect management",
-    skills: ["Trello", "Postman", "Swagger"],
+      "Conducting all types of testing according to the approved testing flow. Reviewing, editing, upgrading and improving test cases.",
+    skills: ["Jira", "Trello", "Postman", "Swagger"],
   },
   {
     id: 3,
-    image: TBC_IMG,
+    image: ENAGRAM_IMG,
     jobTitle: "React Developer",
-    companyName: "TBC IT Academy",
-    employmentType: "Internship",
-    startDate: "Mar 2024",
-    endDate: "Jun 2024",
+    companyName: "Enagram.ai",
+    // employmentType: "Internship",
+    startDate: "Oct 2021",
+    endDate: "Mar 2022",
     description:
-      "Developed a full-stack web application on behalf of 4 month TBC X USAID Acceleration Program. The project involved creating a robust PostgreSQL database and designing an interactive front-end interface.",
-    skills: ["React.js", "Next.js", "Typescript", "PostgreSQL", "Tailwind"],
+      "Collaborating with a startup team to digitize Low Resource Languages and empower speakers to effectively address contemporary challenges.",
+    skills: ["ReactJS", "Typescript", "SASS"],
   },
 
   {
     id: 4,
     image: UPWORK_IMG,
-    jobTitle: "React.js Developer",
+    jobTitle: "ReactJS Developer",
     companyName: "GeGold",
-    employmentType: "Freelance Project",
-    startDate: "Jan 2022",
-    endDate: "Sep 2022",
+    // employmentType: "Freelance Project",
+    startDate: "MAY 2021",
+    endDate: "Sep 2021",
     description:
-      "Creating reusable components in React.js along with TypeScript, state management in Redux, getting, updating and creating data with REST API and axios",
+      "Designed and implemented reusable React components to enhance UI consistency and performance. Integrated RESTful APIs and optimized API calls for improved application efficiency.",
     skills: ["React.js", "Typescript", "Redux"],
   },
   

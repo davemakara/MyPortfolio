@@ -16,8 +16,8 @@ const JobCard = ({ job }: JobProps) => {
       </div>
       <div className="text-white flex flex-col text-center md:text-left md:justify-center gap-4 md:gap-5 w-full md:w-2/5 mb-8 md:mb-0">
         <p className="font-bold text-2xl">{job.jobTitle}</p>
-        <p className="text-xl font-semibold">
-          {job.companyName} | {job.employmentType}
+        <p className="text-xl font-bold text-yellow">
+          {job.companyName} {job.employmentType}
         </p>
         <p className="text-xl font-semibold">
           {job.startDate} - {job.endDate}

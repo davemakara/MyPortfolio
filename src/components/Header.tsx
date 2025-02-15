@@ -6,7 +6,7 @@ import MainNavigation from "./MainNavigation";
 
 import { LuMenuSquare } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
-import ResumeButton from "./UI/ResumeButton";
+// import ResumeButton from "./UI/ResumeButton";
 
 type HeaderProps = {
   homeRef: React.RefObject<HTMLDivElement>;
@@ -34,7 +34,7 @@ const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
 
   return (
     <header className="absolute top-0 w-full h-[70px] sm:h-[80px] xxl:h-[90px] flex justify-between items-center px-5 sm:px-10 md:px-16">
-      <span className="lg:w-[300px] flex items-center gap-4">
+      <span className="lg:w-[350px] flex items-center gap-4">
         <div className="w-[40px] md:w-[50px] h-[40px] md:h-[50px] overflow-hidden rounded-full border-2 border-white">
           <img
             src={profilePic}
@@ -42,8 +42,8 @@ const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
             className="w-full h-full object-fill center"
           />
         </div>
-        <p className="text-base xl:text-lg text-white uppercase tracking-wider">
-          DAVID MAKAROV
+        <p className="text-base xl:text-lg xxxl:text-3xl text-white uppercase tracking-wider">
+          DAVIT MAKAROVI
         </p>
       </span>
       <span
@@ -58,9 +58,9 @@ const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
         aboutRef={aboutRef}
         contactRef={contactRef}
       />
-      <div className="hidden lg:flex lg:items-center lg:justify-end lg:w-[250px] xxl:w-[250px]">
+      {/* <div className="hidden lg:flex lg:items-center lg:justify-end lg:w-[250px] xxl:w-[250px]">
         <ResumeButton>My Resume</ResumeButton>
-      </div>
+      </div> */}
 
       {menuIsOpen && (
         <BurgerMenu

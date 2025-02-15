@@ -16,11 +16,11 @@ const MainNavigation = ({
 }: MainNavigationProps) => {
   return (
     <nav className="h-full hidden lg:flex">
-      <ul className="flex items-center text-white text-base xl:text-lg tracking-wider">
+      <ul className="flex items-center text-white text-base xl:text-lg xxxl:text-3xl tracking-wider">
         <li className="h-full flex">
           <button
             onClick={() => handleNavigation("/", homeRef)}
-            className="h-full flex items-center px-8 hover:text-yellow transition-colors duration-300 ease-in-out"
+            className="h-full flex items-center px-8 xxxl:px-16 hover:text-yellow transition-colors duration-300 ease-in-out"
           >
             HOME
           </button>
@@ -28,7 +28,7 @@ const MainNavigation = ({
         <li className="h-full flex">
           <button
             onClick={() => handleNavigation("/", aboutRef)}
-            className="h-full flex items-center px-8 hover:text-yellow transition-colors duration-300 ease-in-out"
+            className="h-full flex items-center px-8 xxxl:px-16 hover:text-yellow transition-colors duration-300 ease-in-out"
           >
             ABOUT
           </button>
@@ -36,7 +36,7 @@ const MainNavigation = ({
         <li className="h-full flex">
           <button
             onClick={() => handleNavigation("/", contactRef)}
-            className="h-full flex items-center px-8 hover:text-yellow transition-colors duration-300 ease-in-out"
+            className="h-full flex items-center px-8 xxxl:px-16 hover:text-yellow transition-colors duration-300 ease-in-out"
           >
             CONTACT
           </button>

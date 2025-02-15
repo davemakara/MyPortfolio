@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { FaWindowClose } from "react-icons/fa";
-import ResumeButton from "./UI/ResumeButton";
+// import ResumeButton from "./UI/ResumeButton";
 
 interface BurgerMenuProps {
   handleClick: () => void;
@@ -44,7 +44,7 @@ const BurgerMenu = ({
         <FaWindowClose />
       </span>
 
-      <ResumeButton>My Resume</ResumeButton>
+      {/* <ResumeButton>My Resume</ResumeButton> */}
 
       <ul className="text-white text-3xl flex flex-col items-center gap-4 mt-16">
         <li>

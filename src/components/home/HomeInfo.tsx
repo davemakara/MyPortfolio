@@ -6,7 +6,7 @@ const HomeInfo = () => {
       </h1>
 
       <p className="text-white text-base md:text-lg xl:text-2xl xxxl:text-3xl tracking-wider">
-        I'm a motivated and detail-oriented Quality Assurance Specialist with a
+        I'm a motivated and detail-oriented Manual QA Engineer with a
         strong foundation in front-end development.
       </p>
     </div>
