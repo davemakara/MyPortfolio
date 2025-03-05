@@ -331,7 +331,7 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     jobTitle: "Manual QA Engineer",
     companyName: "Andersen Lab",
     // employmentType: "Internship",
-    startDate: "Sep 2022",
+    startDate: "Feb 2023",
     endDate: "Present",
     description:
       "Interaction with the developers to communicate the defects and actively participate in replicating the bugs. Development and maintenance of up-to-date test documentation: test cases, check lists, test plan, test strategy.",
@@ -343,8 +343,8 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     jobTitle: "Manual Software Tester",
     companyName: "Enagram.ai",
     // employmentType: "Contract",
-    startDate: "Mar 2022",
-    endDate: "Sep 2022",
+    startDate: "Dec 2022",
+    endDate: "Feb 2023",
     description:
       "Conducting all types of testing according to the approved testing flow. Reviewing, editing, upgrading and improving test cases.",
     skills: ["Jira", "Trello", "Postman", "Swagger"],
@@ -355,8 +355,8 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     jobTitle: "React Developer",
     companyName: "Enagram.ai",
     // employmentType: "Internship",
-    startDate: "Oct 2021",
-    endDate: "Mar 2022",
+    startDate: "Mar 2022",
+    endDate: "Dec 2022",
     description:
       "Collaborating with a startup team to digitize Low Resource Languages and empower speakers to effectively address contemporary challenges.",
     skills: ["ReactJS", "Typescript", "SASS"],
@@ -368,8 +368,8 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     jobTitle: "ReactJS Developer",
     companyName: "GeGold",
     // employmentType: "Freelance Project",
-    startDate: "MAY 2021",
-    endDate: "Sep 2021",
+    startDate: "Jan 2022",
+    endDate: "Mar 2022",
     description:
       "Designed and implemented reusable React components to enhance UI consistency and performance. Integrated RESTful APIs and optimized API calls for improved application efficiency.",
     skills: ["React.js", "Typescript", "Redux"],
