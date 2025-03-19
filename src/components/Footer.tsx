@@ -9,11 +9,11 @@ const Footer = () => {
       <div className="flex flex-col-reverse mx-auto w-4/5 border-b border-b-[#444] sm:flex-row sm:justify-between pb-10">
         <div className="max-w-full sm:max-w-[240px] md:max-w-[400px] lg:max-w-[500px]">
           <h4 className="text-white text-xl xl:text-2xl mb-4 tracking-widest">
-            DAVID MAKAROV
+            DAVIT MAKAROVI
           </h4>
           <p className="text-white text-base xl:text-lg tracking-wide">
-            Motivated and detail-oriented Quality Assurance Specialist with a
-            strong foundation in front-end development
+          Experienced (2+) and detail-oriented Manual QA Engineer with a
+          strong foundation in front-end development.
           </p>
         </div>
         <div>
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center text-xs sm:text-sm md:text-base mt-8 xxl:mt-10 font-serif font-semibold">
-        © Copyright 2024. Made by David Makarov
+        © Copyright 2024. Made by Davit Makarovi
       </p>
     </footer>
   );

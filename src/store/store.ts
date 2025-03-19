@@ -13,13 +13,13 @@ import flowRecordsImg from "../assets/projects/flowrecords.png";
 import HTML_IMG from "../assets/skills/html.png";
 import CSS_IMG from "../assets/skills/css.png";
 import JS_IMG from "../assets/skills/javascript.png";
-import TS_IMG from "../assets/skills/typescript.png";
+// import TS_IMG from "../assets/skills/typescript.png";
 import REACT_IMG from "../assets/skills/react.png";
 import NEXT_IMG from "../assets/skills/next.png";
-import POSTGRES_IMG from "../assets/skills/postgresSQL.png";
+import SQL_IMG from "../assets/skills/SQL.png";
 import TAILWIND_IMG from "../assets/skills/tailwind.png";
-import SASS_IMG from "../assets/skills/sass.png";
-import REDUX_IMG from "../assets/skills/redux.png";
+// import SASS_IMG from "../assets/skills/sass.png";
+// import REDUX_IMG from "../assets/skills/redux.png";
 // import BOOTSTRAP_IMG from "../assets/skills/bootstrap.png";
 // import AUTH0_IMG from "../assets/skills/auth0.png";
 // import VITE_IMG from "../assets/skills/vite.png";
@@ -74,10 +74,10 @@ export const MY_SKILLS: Skill[] = [
     image: JS_IMG,
     language: "JavaScript",
   },
-  {
-    image: TS_IMG,
-    language: "TypeScript",
-  },
+  // {
+  //   image: TS_IMG,
+  //   language: "TypeScript",
+  // },
   {
     image: REACT_IMG,
     language: "React.js",
@@ -87,21 +87,21 @@ export const MY_SKILLS: Skill[] = [
     language: "Next.js",
   },
   {
-    image: POSTGRES_IMG,
-    language: "PostgreSQL",
+    image: SQL_IMG,
+    language: "SQL databases",
   },
   {
     image: TAILWIND_IMG,
     language: "Tailwind CSS",
   },
-  {
-    image: SASS_IMG,
-    language: "SASS",
-  },
-  {
-    image: REDUX_IMG,
-    language: "Redux",
-  },
+  // {
+  //   image: SASS_IMG,
+  //   language: "SASS",
+  // },
+  // {
+  //   image: REDUX_IMG,
+  //   language: "Redux",
+  // },
   // {
   //   image: BOOTSTRAP_IMG,
   //   language: "Bootstrap",
