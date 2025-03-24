@@ -1,13 +1,14 @@
 import { FiMail } from "react-icons/fi";
 import { GrLocation } from "react-icons/gr";
 import { FiPhoneCall } from "react-icons/fi";
+import { IconType } from "react-icons";
 
 const ContactCards = () => {
   return (
     <div className="grid gap-4 grid-cols-1 lg:w-2/5 px-4 sm:px-10 md:px-20 lg:px-0">
       <Card
         title="Email"
-        subtitle="davidmakarr@gmail.com"
+        subtitle="davidxmakara@gmail.com"
         href="#"
         Icon={FiMail}
       />
@@ -28,7 +29,15 @@ const ContactCards = () => {
   );
 };
 
-const Card = ({ title, subtitle, Icon, href }: any) => {
+
+type CardProps = {
+  title: string;
+  subtitle: string;
+  href: string;
+  Icon: IconType; // Type for react-icons components
+};
+
+const Card: React.FC<CardProps> = ({ title, subtitle, Icon, href }) => {
   return (
     <a
       href={href}
