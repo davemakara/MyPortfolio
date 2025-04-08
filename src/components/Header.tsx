@@ -39,7 +39,7 @@ const Header = ({ homeRef, aboutRef, contactRef }: HeaderProps) => {
           <img
             src={profilePic}
             alt="profile picture"
-            className="w-full h-full object-fill center"
+            className="w-full h-full object-cover scale-125"
           />
         </div>
         <p className="text-base xl:text-lg xxxl:text-3xl text-white uppercase tracking-wider">

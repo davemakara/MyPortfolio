@@ -4,9 +4,9 @@ import foodOrderImg from "../assets/projects/foodApp.png";
 import tbcXusaidImg from "../assets/projects/TBCxUSAID.png";
 import investmentImg from "../assets/projects/investmentApp.png";
 import sentobarImg from "../assets/projects/SENTOBAR.png";
-import diceGameImg from "../assets/projects/dice-game.png";
-import signupImg from "../assets/projects/sign-up-form.png";
-import projectAppImg from "../assets/projects/projectApp.png";
+// import diceGameImg from "../assets/projects/dice-game.png";
+// import signupImg from "../assets/projects/sign-up-form.png";
+// import projectAppImg from "../assets/projects/projectApp.png";
 import skoteImg from "../assets/projects/skote.png";
 import flowRecordsImg from "../assets/projects/flowrecords.png";
 
@@ -26,6 +26,7 @@ import TAILWIND_IMG from "../assets/skills/tailwind.png";
 import GITHUB_IMG from "../assets/skills/github.png";
 import VERCEL_IMG from "../assets/skills/vercel.png";
 import JIRA_IMG from "../assets/skills/jira.png";
+import CONFLUENCE_IMG from "../assets/skills/Confluence.png";
 import TRELLO_IMG from "../assets/skills/Trello.png";
 import POSTMAN_IMG from "../assets/skills/Postman.png";
 import SWAGGER_IMG from "../assets/skills/Swagger.png";
@@ -45,6 +46,10 @@ export const MY_SKILLS: Skill[] = [
   {
     image: JIRA_IMG,
     language: "JIRA",
+  },
+  {
+    image: CONFLUENCE_IMG,
+    language: "Confluence",
   },
   {
     image: TRELLO_IMG,
@@ -136,18 +141,18 @@ export interface Project {
 }
 
 export const PROJECTS: Project[] = [
-  {
-    id: "p1",
-    name: "Sign Up Form",
-    image: signupImg,
-    description:
-      "Sign Up Form is a project with several steps of registering and a full validation logic.",
-    skills: ["HTML", "CSS", "Javascript", "SCSS", "Github"],
-    overview:
-      "Sign Up Form is a project with several steps of registering and a full validation logic. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
-    link: "https://davemakara.github.io/Sign-up-Form/",
-    githubLink: "https://github.com/davemakara/Sign-up-Form",
-  },
+  // {
+  //   id: "p1",
+  //   name: "Sign Up Form",
+  //   image: signupImg,
+  //   description:
+  //     "Sign Up Form is a project with several steps of registering and a full validation logic.",
+  //   skills: ["HTML", "CSS", "Javascript", "SCSS", "Github"],
+  //   overview:
+  //     "Sign Up Form is a project with several steps of registering and a full validation logic. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
+  //   link: "https://davemakara.github.io/Sign-up-Form/",
+  //   githubLink: "https://github.com/davemakara/Sign-up-Form",
+  // },
   {
     id: "p2",
     name: "SENTOBAR",
@@ -160,18 +165,18 @@ export const PROJECTS: Project[] = [
     link: "https://davemakara.github.io/SENTOBAR/",
     githubLink: "https://github.com/davemakara/SENTOBAR",
   },
-  {
-    id: "p3",
-    name: "Dice-Game",
-    image: diceGameImg,
-    description:
-      "Dice Game is an app for 2 players with logic - rolling dice and collecting points to win.",
-    skills: ["HTML", "CSS", "Javascript", "SCSS", "Github"],
-    overview:
-      "Dice Game is an app for 2 players with logic - each player rolls the dice and collects points to win. First player who reaches 100 points is a winner. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
-    link: "https://davemakara.github.io/Dice-Game/",
-    githubLink: "https://github.com/davemakara/Dice-Game",
-  },
+  // {
+  //   id: "p3",
+  //   name: "Dice-Game",
+  //   image: diceGameImg,
+  //   description:
+  //     "Dice Game is an app for 2 players with logic - rolling dice and collecting points to win.",
+  //   skills: ["HTML", "CSS", "Javascript", "SCSS", "Github"],
+  //   overview:
+  //     "Dice Game is an app for 2 players with logic - each player rolls the dice and collects points to win. First player who reaches 100 points is a winner. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
+  //   link: "https://davemakara.github.io/Dice-Game/",
+  //   githubLink: "https://github.com/davemakara/Dice-Game",
+  // },
 
   {
     id: "p4",
@@ -205,26 +210,26 @@ export const PROJECTS: Project[] = [
     link: "https://davemakara.github.io/investment-calculator/",
     githubLink: "https://github.com/davemakara/investment-calculator",
   },
-  {
-    id: "p6",
-    name: "Project App",
-    image: projectAppImg,
-    description:
-      "Project App is an app for creating new projects, have an access on them to the sidebar and option to add tasks in each of them.",
-    skills: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "React",
-      "Styled Components",
-      "Redux",
-      "Github",
-    ],
-    overview:
-      "Project App is an app for creating new projects by adding title, description and date. Also, it gives an access on them to the sidebar and option to add tasks in each of them. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
-    link: "https://davemakara.github.io/Project-App/",
-    githubLink: "https://github.com/davemakara/Project-App",
-  },
+  // {
+  //   id: "p6",
+  //   name: "Project App",
+  //   image: projectAppImg,
+  //   description:
+  //     "Project App is an app for creating new projects, have an access on them to the sidebar and option to add tasks in each of them.",
+  //   skills: [
+  //     "HTML",
+  //     "CSS",
+  //     "Javascript",
+  //     "React",
+  //     "Styled Components",
+  //     "Redux",
+  //     "Github",
+  //   ],
+  //   overview:
+  //     "Project App is an app for creating new projects by adding title, description and date. Also, it gives an access on them to the sidebar and option to add tasks in each of them. In this project I used my Frontend Web Development skills to provide a better user experience for all types of devices.",
+  //   link: "https://davemakara.github.io/Project-App/",
+  //   githubLink: "https://github.com/davemakara/Project-App",
+  // },
   {
     id: "p7",
     name: "Food Order App",
