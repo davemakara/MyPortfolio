@@ -31,7 +31,7 @@ import TRELLO_IMG from "../assets/skills/Trello.png";
 import POSTMAN_IMG from "../assets/skills/Postman.png";
 import SWAGGER_IMG from "../assets/skills/Swagger.png";
 import FIGMA_IMG from "../assets/skills/Figma.png";
-
+import TestRail from "../assets/skills/TestRail.png";
 import ENAGRAM_IMG from "../assets/jobs/enagram.png";
 // import TBC_IMG from "../assets/jobs/tbc.jpg";
 import UPWORK_IMG from "../assets/jobs/upwork.png";
@@ -54,6 +54,10 @@ export const MY_SKILLS: Skill[] = [
   {
     image: TRELLO_IMG,
     language: "Trello",
+  },
+  {
+    image: TestRail,
+    language: "TestRail",
   },
   {
     image: POSTMAN_IMG,
@@ -340,7 +344,7 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     endDate: "Present",
     description:
       "Interaction with the developers to communicate the defects and actively participate in replicating the bugs. Development and maintenance of up-to-date test documentation: test cases, check lists, test plan, test strategy.",
-    skills: ["JIRA", "TestRail", "Postman", "Swagger"],
+    skills: ["JIRA", "TestRail", "Postman", "Swagger", "SQL"],
   },
   {
     id: 2,
@@ -364,7 +368,7 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     endDate: "Dec 2022",
     description:
       "Collaborating with a startup team to digitize Low Resource Languages and empower speakers to effectively address contemporary challenges.",
-    skills: ["ReactJS", "Typescript", "SASS"],
+    skills: ["ReactJS", "Typescript", "Tailwind"],
   },
 
   {
