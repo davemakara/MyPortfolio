@@ -12,7 +12,7 @@ const Footer = () => {
             DAVIT MAKAROVI
           </h4>
           <p className="text-white text-base xl:text-lg tracking-wide">
-          Experienced (2+) and detail-oriented Manual QA Engineer with a
+          Experienced (2+ years) and detail-oriented Manual QA Engineer with a
           strong foundation in front-end development.
           </p>
         </div>

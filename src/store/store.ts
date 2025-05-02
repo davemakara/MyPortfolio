@@ -32,6 +32,7 @@ import POSTMAN_IMG from "../assets/skills/Postman.png";
 import SWAGGER_IMG from "../assets/skills/Swagger.png";
 import FIGMA_IMG from "../assets/skills/Figma.png";
 import TestRail from "../assets/skills/TestRail.png";
+import QMetry from '../assets/skills/QMetry.png'
 import ENAGRAM_IMG from "../assets/jobs/enagram.png";
 // import TBC_IMG from "../assets/jobs/tbc.jpg";
 import UPWORK_IMG from "../assets/jobs/upwork.png";
@@ -58,6 +59,10 @@ export const MY_SKILLS: Skill[] = [
   {
     image: TestRail,
     language: "TestRail",
+  },
+  {
+    image: QMetry,
+    language: "QMetry",
   },
   {
     image: POSTMAN_IMG,
