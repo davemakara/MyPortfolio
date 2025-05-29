@@ -9,7 +9,7 @@ const SocialBox = () => {
       <ul className="block">
         <li>
           <a
-            href="https://www.linkedin.com/in/davitm/"
+            href="https://www.linkedin.com/in/davitmakarovi/"
             target="_blank"
             className="w-full block p-[10px] rounded-sm transition-colors duration-500 ease-out hover:bg-gray-light"
           >

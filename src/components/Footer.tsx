@@ -23,7 +23,7 @@ const Footer = () => {
           <ul className="flex gap-2 mb-10 sm:mb-0">
             <li>
               <a
-                href="https://www.linkedin.com/in/davitm"
+                href="https://www.linkedin.com/in/davitmakarovi"
                 target="_blank"
               >
                 <FaLinkedin className="text-3xl" />
