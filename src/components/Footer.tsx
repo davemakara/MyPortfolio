@@ -12,7 +12,7 @@ const Footer = () => {
             DAVIT MAKAROVI
           </h4>
           <p className="text-white text-base xl:text-lg tracking-wide">
-          Experienced (2+ years) and detail-oriented Manual QA Engineer with a
+          Experienced (2.5+ years) and detail-oriented Quality Assurance Engineer with a
           strong foundation in front-end development.
           </p>
         </div>
@@ -23,7 +23,7 @@ const Footer = () => {
           <ul className="flex gap-2 mb-10 sm:mb-0">
             <li>
               <a
-                href="https://www.linkedin.com/in/davidmakarov"
+                href="https://www.linkedin.com/in/davitm"
                 target="_blank"
               >
                 <FaLinkedin className="text-3xl" />
@@ -35,12 +35,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/davemakaraa/" target="_blank">
+              <a href="https://www.instagram.com/davemakara_/" target="_blank">
                 <FaInstagramSquare className="text-3xl" />
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/DavidMakarovv" target="_blank">
+              <a href="https://www.facebook.com/davitmakarovi" target="_blank">
                 <FaFacebookSquare className="text-3xl" />
               </a>
             </li>

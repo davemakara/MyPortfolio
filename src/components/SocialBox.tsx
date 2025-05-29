@@ -9,7 +9,7 @@ const SocialBox = () => {
       <ul className="block">
         <li>
           <a
-            href="https://www.linkedin.com/in/davidmakarov/"
+            href="https://www.linkedin.com/in/davitm/"
             target="_blank"
             className="w-full block p-[10px] rounded-sm transition-colors duration-500 ease-out hover:bg-gray-light"
           >
@@ -27,7 +27,7 @@ const SocialBox = () => {
         </li>
         <li>
           <a
-            href="https://www.instagram.com/davemakaraa/"
+            href="https://www.instagram.com/davemakara_/"
             target="_blank"
             className="w-full block p-[10px] rounded-sm transition-all duration-500 ease-out hover:bg-gray-light"
           >
@@ -36,7 +36,7 @@ const SocialBox = () => {
         </li>
         <li>
           <a
-            href="https://www.facebook.com/DavidMakarovv"
+            href="https://www.facebook.com/davitmakarovi"
             target="_blank"
             className="w-full block p-[10px] rounded-sm transition-all duration-500 ease-out hover:bg-gray-light"
           >
