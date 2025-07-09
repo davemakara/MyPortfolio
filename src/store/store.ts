@@ -35,8 +35,8 @@ import TestRail from "../assets/skills/TestRail.png";
 import QMetry from '../assets/skills/QMetry.png'
 import ENAGRAM_IMG from "../assets/jobs/enagram.png";
 // import TBC_IMG from "../assets/jobs/tbc.jpg";
-import UPWORK_IMG from "../assets/jobs/upwork.png";
 import ANDERSEN_IMG from "../assets/jobs/andersen.webp"
+import ASVLA_IMG from "../assets/jobs/ASVLA.jpg"
 
 export interface Skill {
   image: string;
@@ -46,7 +46,7 @@ export interface Skill {
 export const MY_SKILLS: Skill[] = [
   {
     image: JIRA_IMG,
-    language: "JIRA",
+    language: "Jira",
   },
   {
     image: CONFLUENCE_IMG,
@@ -334,13 +334,26 @@ export interface WorkExp {
   employmentType?: string;
   startDate: string;
   endDate: string;
-  description: string;
+  description: string[];
   skills?: string[];
 }
 
 export const WORK_EXPERIENCE: WorkExp[] = [
   {
     id: 1,
+    image: ASVLA_IMG,
+    jobTitle: "QA Engineer",
+    companyName: "ASVLA",
+    // employmentType: "Internship",
+    startDate: "Jun 2025",
+    endDate: "Present",
+    description:
+      ["• Validate games, payment systems, user account features (registration, KYC, login, wallet, etc.), promotions and back-office tools",
+      "• Collaborate closely with cross-functional teams, including local and international developers, business analysts and designers"],
+    skills: ["Git", "Postman", "Swagger", "Sentry"],
+  },
+  {
+    id: 2,
     image: ANDERSEN_IMG,
     jobTitle: "Manual QA Engineer",
     companyName: "Andersen Lab",
@@ -348,11 +361,13 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     startDate: "Feb 2023",
     endDate: "Present",
     description:
-      "Interaction with the developers to communicate the defects and actively participate in replicating the bugs. Development and maintenance of up-to-date test documentation: test cases, check lists, test plan, test strategy.",
-    skills: ["JIRA", "TestRail", "Postman", "Swagger", "SQL"],
+      ["• Perform end-to-end manual testing of web and mobile applications, covering functional, regression, smoke, exploratory and usability testing",
+        "• Analyze client requirements and technical documentation to create detailed, scalable test cases and checklists tailored to each domain"],
+        
+    skills: ["Jira", "TestRail", "Postman", "Swagger", "SQL"],
   },
   {
-    id: 2,
+    id: 3,
     image: ENAGRAM_IMG,
     jobTitle: "Manual Software Tester",
     companyName: "Enagram.ai",
@@ -360,11 +375,12 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     startDate: "Dec 2022",
     endDate: "Feb 2023",
     description:
-      "Conducting all types of testing according to the approved testing flow. Reviewing, editing, upgrading and improving test cases.",
+      ["• Perform various types of testing in alignment with the approved testing process, ensuring comprehensive validation of system functionality and performance",
+        "• Analyze test results and report defects, collaborating with the development team to drive issue resolution and maintain product quality"],
     skills: ["Jira", "Trello", "Postman", "Swagger"],
   },
   {
-    id: 3,
+    id: 4,
     image: ENAGRAM_IMG,
     jobTitle: "React Developer",
     companyName: "Enagram.ai",
@@ -372,21 +388,10 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     startDate: "Mar 2022",
     endDate: "Dec 2022",
     description:
-      "Collaborating with a startup team to digitize Low Resource Languages and empower speakers to effectively address contemporary challenges.",
+      ["• Develop and maintain scalable web applications using React.js, ensuring a seamless, responsive, and high-performance user experience",
+        "• Collaborate with designers and backend developers to implement responsive UI/UX designs and integrate APIs effectively"
+      ],
     skills: ["ReactJS", "Typescript", "Tailwind"],
-  },
-
-  {
-    id: 4,
-    image: UPWORK_IMG,
-    jobTitle: "ReactJS Developer",
-    companyName: "GeGold",
-    // employmentType: "Freelance Project",
-    startDate: "Jan 2022",
-    endDate: "Mar 2022",
-    description:
-      "Designed and implemented reusable React components to enhance UI consistency and performance. Integrated RESTful APIs and optimized API calls for improved application efficiency.",
-    skills: ["React.js", "Typescript", "Redux"],
-  },
+  }
   
 ];

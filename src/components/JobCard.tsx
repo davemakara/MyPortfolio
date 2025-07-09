@@ -14,7 +14,7 @@ const JobCard = ({ job }: JobProps) => {
           className="w-24 xxl:w-32 h-24 xxl:h-32 rounded-full mx-auto bg-center md:mx-12 xxl:mx-24"
         />
       </div>
-      <div className="text-white flex flex-col text-center md:text-left md:justify-center gap-4 md:gap-5 w-full md:w-2/5 mb-8 md:mb-0">
+      <div className="text-white flex flex-col text-center md:text-left md:justify-center gap-4 md:gap-5 w-full md:w-2/5 mb-4 md:mb-0">
         <p className="font-bold text-2xl">{job.jobTitle}</p>
         <p className="text-xl font-bold text-yellow">
           {job.companyName} {job.employmentType}
@@ -24,14 +24,20 @@ const JobCard = ({ job }: JobProps) => {
         </p>
       </div>
       <div className="flex flex-col justify-between md:justify-around items-center md:items-start py-2 w-full md:w-2/5">
-        <p className="font-semibold text-white text-center text-sm xl:text-base md:text-left mb-5 md:mb-0">
-          {job.description}
-        </p>
+        
 
-        <ul className="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-3 md:gap-4 text-white">
+        <div className="mb-4">{job.description.map((item) => 
+            <p className="font-semibold text-white text-center text-xs md:text-sm md:text-left mb-1" key={item}>
+               {item}
+            </p>
+          )}</div>
+          
+        
+
+        <ul className="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-2 text-white">
           {job.skills?.map((skill) => (
             <li
-              className="p-1 xl:px-2 bg-gray-dark rounded-md text-sm md:text-base"
+              className="p-1 xl:px-3 bg-gray-dark rounded-md text-xs sm:text-sm"
               key={skill}
             >
               {skill}
