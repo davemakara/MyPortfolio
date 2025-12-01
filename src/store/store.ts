@@ -33,10 +33,11 @@ import SWAGGER_IMG from "../assets/skills/Swagger.png";
 import FIGMA_IMG from "../assets/skills/Figma.png";
 import TestRail from "../assets/skills/TestRail.png";
 import QMetry from '../assets/skills/QMetry.png'
+import BrowserStack from '../assets/skills/BrowserStack.png.png'
 import ENAGRAM_IMG from "../assets/jobs/enagram.png";
 // import TBC_IMG from "../assets/jobs/tbc.jpg";
 import ANDERSEN_IMG from "../assets/jobs/andersen.webp"
-// import ASVLA_IMG from "../assets/jobs/ASVLA.jpg"
+import ASVLA_IMG from "../assets/jobs/ASVLA.jpg"
 
 export interface Skill {
   image: string;
@@ -71,6 +72,10 @@ export const MY_SKILLS: Skill[] = [
   {
     image: SWAGGER_IMG,
     language: "Swagger",
+  },
+  {
+    image: BrowserStack,
+    language: "BrowserStack"
   },
   {
     image: FIGMA_IMG,
@@ -339,19 +344,19 @@ export interface WorkExp {
 }
 
 export const WORK_EXPERIENCE: WorkExp[] = [
-  // {
-  //   id: 1,
-  //   image: ASVLA_IMG,
-  //   jobTitle: "QA Engineer",
-  //   companyName: "ASVLA",
-  //   // employmentType: "Internship",
-  //   startDate: "Jun 2025",
-  //   endDate: "Present",
-  //   description:
-  //     ["• Validate games, payment systems, user account features (registration, KYC, login, wallet, etc.), promotions and back-office tools",
-  //     "• Collaborate closely with cross-functional teams, including local and international developers, business analysts and designers"],
-  //   skills: ["Git", "Postman", "Swagger", "Sentry"],
-  // },
+  {
+    id: 1,
+    image: ASVLA_IMG,
+    jobTitle: "QA Engineer",
+    companyName: "ASVLA",
+    // employmentType: "Internship",
+    startDate: "Jun 2025",
+    endDate: "Present",
+    description:
+      ["• Validate games, payment systems, user account features (registration, KYC, login, wallet, etc.), promotions and back-office tools",
+      "• Collaborate closely with cross-functional teams, including local and international developers, business analysts and designers"],
+    skills: ["Git", "Postman", "Swagger", "Sentry"],
+  },
   {
     id: 2,
     image: ANDERSEN_IMG,
