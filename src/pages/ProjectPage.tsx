@@ -26,7 +26,7 @@ const ProjectPage = () => {
           <a
             href={project.link}
             target="_blank"
-            className="w-20 sm:w-24 h-10 sm:h-12 bg-projectSkill flex items-center justify-center rounded-md hover:bg-orange transition-colors duration-300 ease-in-out shadow-lg shadow-black"
+            className="w-20 sm:w-24 h-10 sm:h-12 bg-projectSkill flex items-center justify-center rounded-md hover:bg-yellow hover:text-customBlue transition-colors duration-300 ease-in-out shadow-lg shadow-black"
           >
             LIVE
           </a>
@@ -34,7 +34,7 @@ const ProjectPage = () => {
           <a
             href={project.githubLink}
             target="_blank"
-            className="w-20 sm:w-24 h-10 sm:h-12 bg-projectSkill flex items-center justify-center rounded-md hover:bg-orange transition-colors duration-300 ease-in-out shadow-lg shadow-black"
+            className="w-20 sm:w-24 h-10 sm:h-12 bg-projectSkill flex items-center justify-center rounded-md hover:bg-yellow hover:text-customBlue transition-colors duration-300 ease-in-out shadow-lg shadow-black"
           >
             REPO
           </a>

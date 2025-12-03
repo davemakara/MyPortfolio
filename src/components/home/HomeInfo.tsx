@@ -6,8 +6,7 @@ const HomeInfo = () => {
       </h1>
 
       <p className="text-white text-base md:text-lg xl:text-2xl xxxl:text-3xl tracking-wider">
-        Experienced (2.5+ years) and detail-oriented Quality Assurance Engineer with a
-        strong foundation in front-end development.
+        Experienced (3+ years) and detail-oriented Software QA Engineer with a solid front-end development background.
       </p>
     </div>
   );

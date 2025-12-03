@@ -23,7 +23,7 @@ import TAILWIND_IMG from "../assets/skills/tailwind.png";
 // import BOOTSTRAP_IMG from "../assets/skills/bootstrap.png";
 // import AUTH0_IMG from "../assets/skills/auth0.png";
 // import VITE_IMG from "../assets/skills/vite.png";
-import GITHUB_IMG from "../assets/skills/github.png";
+import GIT_IMG from "../assets/skills/Git.png";
 import VERCEL_IMG from "../assets/skills/vercel.png";
 import JIRA_IMG from "../assets/skills/jira.png";
 import CONFLUENCE_IMG from "../assets/skills/Confluence.png";
@@ -134,8 +134,8 @@ export const MY_SKILLS: Skill[] = [
   //   language: "Vite",
   // },
   {
-    image: GITHUB_IMG,
-    language: "GitHub",
+    image: GIT_IMG,
+    language: "Git",
   },
   {
     image: VERCEL_IMG,
@@ -355,7 +355,7 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     description:
       ["• Validate games, payment systems, user account features (registration, KYC, login, wallet, etc.), promotions and back-office tools",
       "• Collaborate closely with cross-functional teams, including local and international developers, business analysts and designers"],
-    skills: ["Git", "Postman", "Swagger", "Sentry"],
+    skills: ["GitHub", "QMetry", "Postman", "Swagger"],
   },
   {
     id: 2,
@@ -364,7 +364,7 @@ export const WORK_EXPERIENCE: WorkExp[] = [
     companyName: "Andersen Lab",
     // employmentType: "Internship",
     startDate: "Feb 2023",
-    endDate: "Present",
+    endDate: "Nov 2025",
     description:
       ["• Perform end-to-end manual testing of web and mobile applications, covering functional, regression, smoke, exploratory and usability testing",
         "• Analyze client requirements and technical documentation to create detailed, scalable test cases and checklists tailored to each domain"],
